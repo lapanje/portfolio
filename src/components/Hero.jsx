@@ -57,7 +57,7 @@ export default function Hero() {
         </span>
 
         <h1 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">
-          I build <span className="gradient-clip">fast, clean</span> web apps.
+          Hi, I’m <span className="gradient-clip">Kristjan</span> – a front-end developer.
         </h1>
 
         <p className="mx-auto mt-4 max-w-xl" style={{ color: "var(--desc-text)" }}>
