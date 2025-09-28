@@ -8,10 +8,10 @@ import { motion as Motion } from 'framer-motion'
 import { Briefcase, User, Code2, GraduationCap } from 'lucide-react'
 
 const projects = [
-  { title: 'Realtime Chat', tech:['React','WebSocket','Node'], desc:'Optimistic UI, presence, message caching.', slug:'realtime-chat' },
-  { title: 'Algo Visualizer', tech:['Canvas','React'], desc:'Pathfinding & sorting visualizations with precise timing.', slug:'algo-visualizer' },
-  { title: 'Portfolio CMS', tech:['Vite','React','MDX'], desc:'Content-driven portfolio with MDX & code blocks.', slug:'portfolio-cms' },
-  { title: '3D Configurator', tech:['React','Three.js'], desc:'Parametric materials, lighting presets, snapshots.', slug:'3d-configurator' },
+  { title: 'Klepet v realnem času', tech:['React','WebSocket','Node'], desc:'Optimistični vmesnik, prisotnost, predpomnjenje sporočil.', slug:'realtime-chat' },
+  { title: 'Vizualizator algoritmov', tech:['Canvas','React'], desc:'Vizualizacije iskanja poti in sortiranja z natančnim časom.', slug:'algo-visualizer' },
+  { title: 'Portfolio CMS', tech:['Vite','React','MDX'], desc:'Portfelj na osnovi vsebine z MDX in kodnimi bloki.', slug:'portfolio-cms' },
+  { title: '3D konfigurator', tech:['React','Three.js'], desc:'Parametrični materiali, svetlobne nastavitve, posnetki zaslona.', slug:'3d-configurator' },
 ]
 
 const gridVariants = {
@@ -26,7 +26,7 @@ export default function Home() {
       <Header />
       <Hero />
       <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--section-gap)' }}>
-        <Section id="projects" eyebrow="Selected work" title="Projects">
+  <Section id="projects" eyebrow="Izbrana dela" title="Projekti">
           <Motion.div
               variants={gridVariants}
               initial="hidden"

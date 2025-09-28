@@ -36,7 +36,7 @@ export default function ResumeButton() {
         border: isDark ? '1px solid #fff' : '1px solid #18181b'
       }}
     >
-      Resume <FileDown size={16} />
+      Življenjepis <FileDown size={16} />
     </a>
   );
 }

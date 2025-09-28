@@ -57,11 +57,11 @@ export default function Hero() {
         </span>
 
         <h1 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">
-          Hi, I’m <span className="gradient-clip">Kristjan</span> – a front-end developer.
+          Živjo, sem <span className="gradient-clip">Kristjan</span> – razvijalec spletnih rešitev.
         </h1>
 
         <p className="mx-auto mt-4 max-w-xl" style={{ color: "var(--desc-text)" }}>
-          Strong UX, composable systems, and disciplined shipping. Explore selected work below.
+          Gradim odzivne, pregledne in hitre spletne aplikacije z uporabo sodobnih orodij.
         </p>
 
         <div className="mt-6 flex justify-center gap-3">
@@ -69,7 +69,7 @@ export default function Hero() {
             href="#projects"
             className="inline-flex items-center gap-2 rounded-xl border px-4 py-2 font-medium hover:shadow-sm"
           >
-            View projects <MoveRight size={16} />
+            Projekti <MoveRight size={16} />
           </a>
           <ResumeButton />
         </div>
