@@ -3,8 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kristjan Portfolio</title>
-    <script type="module" crossorigin src="/assets/index-2iud-B1Z.js"></script>
+    <title>Kristjan</title>
+	<script>
+		(function () {
+			var root = document.documentElement;
+			try {
+			var saved = localStorage.getItem('theme'); // 'dark' | 'light' | null
+			var theme = (saved === 'light' || saved === 'dark') ? saved : 'dark'; // default = dark
+			if (theme === 'dark') { root.classList.add('dark'); } else { root.classList.remove('dark'); }
+			root.style.colorScheme = theme;
+			// Normalize stored value in case it was invalid/missing
+			if (saved !== theme) localStorage.setItem('theme', theme);
+			} catch (err) {
+			console.warn('[theme] failed to read/write localStorage:', err);
+			root.classList.add('dark');
+			root.style.colorScheme = 'dark';
+			}
+		})();
+	</script>
+
+    <script type="module" crossorigin src="/assets/index-8sYBvCb5.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CJwqY0Ho.css">
   </head>
   <body>
     <div id="root"></div>
