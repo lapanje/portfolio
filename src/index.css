@@ -17,7 +17,7 @@
   --accent: #6366f1;
   --accent2: #10b981;
   --border: #d1d5db;
-  --header-bg: rgba(255,255,255,0.82);
+  --header-bg: rgba(255,255,255,0.60);
   --header-logo: #18181b;
   --badge-bg: #f3f4f6;
   --badge-text: #18181b;
@@ -33,7 +33,7 @@ html.dark {
   --accent: #6366f1;
   --accent2: #10b981;
   --border: #23272f;
-  --header-bg: rgba(24,24,27,0.82);
+  --header-bg: rgba(24,24,27,0.60);
   --header-logo: #fafaf9;
   --badge-bg: #23272f;
   --badge-text: #fafaf9;
