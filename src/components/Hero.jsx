@@ -1,11 +1,49 @@
-import TechStrip from './TechStrip'
-import ResumeButton from './ResumeButton'
-import { MoveRight } from 'lucide-react'
+import { useRef, useState } from "react";
+import TechStrip from "./TechStrip";
+import ResumeButton from "./ResumeButton";
+import { MoveRight } from "lucide-react";
 
 export default function Hero() {
+  const ref = useRef(null);
+  const [pos, setPos] = useState({ x: 0, y: 0, on: false });
+
+  function onMove(e) {
+    const r = ref.current?.getBoundingClientRect();
+    if (!r) return;
+    setPos({ x: e.clientX - r.left, y: e.clientY - r.top, on: true });
+  }
+  function onLeave() {
+    setPos((p) => ({ ...p, on: false }));
+  }
+
   return (
-    <section id="home" className="relative">
-      <div className="mx-auto max-w-5xl px-5 py-16 text-center md:py-24">
+    <section
+      id="home"
+      ref={ref}
+      onMouseMove={onMove}
+      onMouseLeave={onLeave}
+      className="relative z-0"
+    >
+      {/* Mouse-follow glow (same style as ProjectCard) */}
+      <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
+  <div
+    className="absolute h-[500px] w-[500px] opacity-60 animate-[wiggle_6s_ease-in-out_infinite] blur-2xl"
+    style={{
+      left: `${pos.x - 250}px`,
+      top: `${pos.y - 250}px`,
+      background:
+        "radial-gradient(ellipse at center, rgba(99,102,241,0.09), transparent 70%)",
+      clipPath:
+        "polygon(48% 0%, 61% 9%, 76% 20%, 89% 34%, 100% 50%, 89% 66%, 76% 80%, 61% 91%, 48% 100%, 34% 91%, 20% 80%, 9% 66%, 0% 50%, 9% 34%, 20% 20%, 34% 9%)",
+      transform: pos.on ? "scale(1)" : "scale(0)",
+      transition: "transform 0.3s ease-out",
+    }}
+  />
+</div>
+
+
+      {/* Content sits above the glow */}
+      <div className="relative z-10 mx-auto max-w-5xl px-5 py-16 text-center md:py-24">
         <span
           className="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium ring-1 ring-inset"
           style={{
@@ -19,7 +57,7 @@ export default function Hero() {
         </span>
 
         <h1 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">
-          I build fast, clean web apps.
+          I build <span className="gradient-clip">fast, clean</span> web apps.
         </h1>
 
         <p className="mx-auto mt-4 max-w-xl" style={{ color: "var(--desc-text)" }}>
@@ -41,5 +79,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
