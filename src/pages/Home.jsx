@@ -5,7 +5,7 @@ import ProjectCard from '../components/ProjectCard'
 import Footer from '../components/Footer'
 import Reveal from '../components/Reveal'
 import { motion as Motion } from 'framer-motion'
-import { Briefcase, GraduationCap, User } from 'lucide-react'
+import { Briefcase, User, Code2, GraduationCap } from 'lucide-react'
 
 const projects = [
   { title: 'Realtime Chat', tech:['React','WebSocket','Node'], desc:'Optimistic UI, presence, message caching.', slug:'realtime-chat' },
@@ -42,49 +42,73 @@ export default function Home() {
           </Motion.div>
         </Section>
 
-        <Section id="experience" eyebrow="Background" title="Experience" right={<Briefcase size={18} className="opacity-70" />}>
+        <Section id="experience" eyebrow="Delovne izkušnje" title="Izkušnje" right={<Briefcase size={18} className="opacity-70" />}>
           <Reveal>
             <ol className="relative border-s pl-6">
               <li className="mb-8">
-                <span className="absolute -start-[9px] mt-1.5 h-4 w-4 rounded-full border" style={{ background: "var(--card)" }}/>
-                <div className="text-xs uppercase tracking-wide" style={{ color: "var(--text-secondary)" }}>2025 — now</div>
-                <div className="text-base font-semibold">Freelance</div>
-                <p className="text-sm" style={{ color: "var(--text-secondary)" }}>Building small products and tools with React + Node.</p>
+                <span className="absolute -start-[9px] mt-1.5 h-4 w-4 rounded-full border bg-white dark:bg-neutral-900" style={{ background: "var(--card)" }}/>
+                <div className="text-xs uppercase tracking-wide font-semibold" style={{ color: "var(--text-secondary)" }}>05/2022 – 07/2022</div>
+                <div className="text-base font-semibold">Praktično usposabljanje in dijaško počitniško delo</div>
+                <div className="text-sm mt-1 font-medium">Metronik d.o.o., Ljubljana</div>
+                <ul className="list-disc pl-5 text-sm mt-2" style={{ color: 'var(--desc-text)' }}>
+                  <li>Razvoj aplikacije v C# za spremljanje in vizualizacijo alarmov z uporabo SQL poizvedb</li>
+                  <li>Obdelava podatkov, konfiguracija filtrov in priprava osnovnega uporabniškega vmesnika</li>
+                  <li>Osnovno delo s PLC in programsko opremo za krmilnike</li>
+                </ul>
+              </li>
+            </ol>
+          </Reveal>
+        </Section>
+
+  <Section id="education" eyebrow="Izobraževanje" title="Izobraževanje" right={<GraduationCap size={18} className="opacity-70" />}>
+          <Reveal>
+            <ol className="relative border-s pl-6">
+              <li className="mb-8">
+                <span className="absolute -start-[9px] mt-1.5 h-4 w-4 rounded-full border bg-white dark:bg-neutral-900" style={{ background: "var(--card)" }}/>
+                <div className="text-xs uppercase tracking-wide font-semibold" style={{ color: "var(--text-secondary)" }}>2024 – Trenutno</div>
+                <div className="text-base font-semibold">Inženir računalništva in informatike</div>
+                <div className="text-sm mt-1 font-medium">Šolski center Kranj</div>
+                <div className="text-xs mt-1">Spletišče <a href="https://www.sckr.si" className="underline">www.sckr.si</a> | Raven EOK 6</div>
               </li>
               <li>
-                <span className="absolute -start-[9px] mt-1.5 h-4 w-4 rounded-full border" style={{ background: "var(--card)" }}/>
-                <div className="text-xs uppercase tracking-wide" style={{ color: "var(--text-secondary)" }}>2024 — 2025</div>
-                <div className="text-base font-semibold">University projects</div>
-                <p className="text-sm" style={{ color: "var(--text-secondary)" }}>Led teams, focused on DX, testing and CI.</p>
+                <span className="absolute -start-[9px] mt-1.5 h-4 w-4 rounded-full border bg-white dark:bg-neutral-900" style={{ background: "var(--card)" }}/>
+                <div className="text-xs uppercase tracking-wide font-semibold" style={{ color: "var(--text-secondary)" }}>2019 – 2024</div>
+                <div className="text-base font-semibold">Tehnik računalništva</div>
+                <div className="text-sm mt-1 font-medium">Vegova Ljubljana</div>
+                <div className="text-xs mt-1">Spletišče <a href="https://www.vegova.si" className="underline">www.vegova.si</a> | Raven EOK 5</div>
               </li>
             </ol>
           </Reveal>
         </Section>
 
         <div className="flex flex-col gap-4">
-          <Section id="about" eyebrow="Who I am" title="About" right={<User size={18} className="opacity-70" />}>
+          <Section id="about" eyebrow="O meni" title="O meni" right={<User size={18} className="opacity-70" />}>
             <Reveal>
               <div className="grid items-stretch gap-4 md:grid-cols-[1fr_1.2fr]">
                 <div className="rounded-2xl border p-6 about-section-bg flex flex-col h-full">
-                  <h3 className="font-semibold mb-2">Strengths</h3>
+                  <h3 className="font-semibold mb-2">Osebni podatki</h3>
                   <ul className="list-disc pl-5 text-sm" style={{ color: 'var(--desc-text)' }}>
-                    <li>Clean, readable code and thoughtful UI</li>
-                    <li>Performance-minded: fast loads, smooth UX</li>
-                    <li>Testing & shipping discipline</li>
+                    <li><span className="font-bold">Ime:</span> Kristjan Lapanje</li>
+                    <li><span className="font-bold">Datum rojstva:</span> 19/11/2004</li>
+                    <li><span className="font-bold">Državljanstvo:</span> slovensko</li>
+                    <li><span className="font-bold">Spol:</span> Moški</li>
                   </ul>
-                  <h3 className="font-semibold mt-5 mb-2">Tools</h3>
-                  <p className="text-sm" style={{ color: 'var(--desc-text)' }}>
-                    React, Vite, Tailwind, Node, PostgreSQL, Prisma, Playwright, Docker
-                  </p>
+                  <h3 className="font-semibold mt-5 mb-2">Kontakt</h3>
+                  <ul className="pl-5 text-sm" style={{ color: 'var(--desc-text)' }}>
+                    <li><span className="font-bold">Email:</span> kristjan.lapanje@gmail.com</li>
+                    <li><span className="font-bold">Telefon:</span> (+386) 41934490</li>
+                  </ul>
                 </div>
                 <div className="rounded-2xl border p-6 flex flex-col h-full">
-                  <h3 className="font-semibold mb-2 flex items-center gap-2"><GraduationCap size={16}/> Currently studying</h3>
-                  <p className="text-sm" style={{ color: 'var(--desc-text)' }}>
-                    I’m a software developer in the making, focused on building well-designed, production-ready interfaces.
-                  </p>
-                  <p className="text-sm mt-3" style={{ color: 'var(--desc-text)' }}>
-                    Outside code, I like fitness and design—both shape how I approach clean UI.
-                  </p>
+                  <h3 className="font-semibold mb-2 flex items-center gap-2"><Code2 size={16}/> Spretnosti</h3>
+                  <ul className="list-disc pl-5 text-sm" style={{ color: 'var(--desc-text)' }}>
+                    <li><span className="font-bold">Programski jeziki:</span> C++, C#, JS, PHP, HTML/CSS, SQL</li>
+                    <li>Razvoj spletnih aplikacij</li>
+                    <li>Upravljanje podatkovnih baz</li>
+                    <li>Osnovno znanje omrežij</li>
+                    <li>Napredno znanje Windows in MS Office</li>
+                    <li>Osnovno znanje linuxa</li>
+                  </ul>
                 </div>
               </div>
             </Reveal>

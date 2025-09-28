@@ -16,8 +16,12 @@ function Header() {
       }}
     >
       <div className="max-w-5xl mx-auto px-5 py-3 flex items-center justify-between relative">
-        <a href="#home" className="font-bold tracking-tight" style={{ color: "var(--header-logo)" }}>
-            Kristjan Lapanje
+        <a
+          href="#home"
+          className="font-bold text-base md:text-lg tracking-widest header-logo"
+          style={{ color: "var(--header-logo)", fontFamily: 'JetBrains Mono, Fira Mono, Menlo, monospace', letterSpacing: '0.06em' }}
+        >
+          Kristjan Lapanje
         </a>
 
         <nav
