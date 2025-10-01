@@ -1,33 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-	<meta charset="UTF-8" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kristjan</title>
-	<script>
-		(function () {
-			var root = document.documentElement;
-			try {
-			var saved = localStorage.getItem('theme'); // 'dark' | 'light' | null
-			var theme = (saved === 'light' || saved === 'dark') ? saved : 'dark'; // default = dark
-			if (theme === 'dark') { root.classList.add('dark'); } else { root.classList.remove('dark'); }
-			root.style.colorScheme = theme;
-			// Normalize stored value in case it was invalid/missing
-			if (saved !== theme) localStorage.setItem('theme', theme);
-			} catch (err) {
-			console.warn('[theme] failed to read/write localStorage:', err);
-			root.classList.add('dark');
-			root.style.colorScheme = 'dark';
-			}
-		})();
-	</script>
-
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+			rel="stylesheet"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kristjan</title>
+		<script>
+			(function () {
+				var root = document.documentElement;
+				try {
+					var saved = localStorage.getItem("theme"); // 'dark' | 'light' | null
+					var theme =
+						saved === "light" || saved === "dark" ? saved : "dark"; // default = dark
+					if (theme === "dark") {
+						root.classList.add("dark");
+					} else {
+						root.classList.remove("dark");
+					}
+					root.style.colorScheme = theme;
+					// Normalize stored value in case it was invalid/missing
+					if (saved !== theme) localStorage.setItem("theme", theme);
+				} catch (err) {
+					console.warn(
+						"[theme] failed to read/write localStorage:",
+						err
+					);
+					root.classList.add("dark");
+					root.style.colorScheme = "dark";
+				}
+			})();
+		</script>
+	</head>
+	<body>
+		<div id="root"></div>
+		<script type="module" src="/src/main.jsx"></script>
+	</body>
 </html>
