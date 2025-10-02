@@ -21,6 +21,8 @@
 	--badge-bg: #f3f4f6;
 	--badge-text: #18181b;
 	--desc-text: #23272f;
+	--hero-glow: radial-gradient(circle, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0) 78%);
+  	--hero-glow-blur: 48px;
 }
 
 html.dark {
@@ -37,6 +39,8 @@ html.dark {
 	--badge-bg: #23272f;
 	--badge-text: #fafaf9;
 	--desc-text: #e5e7eb;
+	--hero-glow: radial-gradient(circle, rgba(255,255,255,0.28) 0%, rgba(0,0,0,0) 78%);
+  	--hero-glow-blur: 48px;
 }
 /* About section background gradient */
 .about-section-bg {
