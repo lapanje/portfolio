@@ -80,26 +80,6 @@ html {
 	will-change: transform;
 }
 
-/* gradient text accent */
-
-.gradient-text {
-	background: linear-gradient(90deg, #38bdf8 0%, #10b981 100%);
-	-webkit-background-clip: text;
-	background-clip: text;
-	color: transparent;
-}
-html.dark .gradient-text {
-	background: linear-gradient(90deg, #7dd3fc 0%, #a7f3d0 100%);
-}
-
-/* card glow */
-.card-glow {
-	position: absolute;
-	inset: -1px;
-	border-radius: 1rem;
-	pointer-events: none;
-}
-
 /* animated gradient for "fast, clean" */
 
 .gradient-clip {
