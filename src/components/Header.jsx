@@ -32,17 +32,17 @@ function Header() {
 					className="hidden md:flex gap-6 text-sm absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
 					style={{ pointerEvents: "auto" }}
 				>
+					<a href="#about" className="hover:opacity-80">
+						About me
+					</a>
 					<a href="#projects" className="hover:opacity-80">
 						Projects
-					</a>
-					<a href="#experience" className="hover:opacity-80">
-						Experience
 					</a>
 					<a href="#education" className="hover:opacity-80">
 						Education
 					</a>
-					<a href="#about" className="hover:opacity-80">
-						About me
+					<a href="#experience" className="hover:opacity-80">
+						Experience
 					</a>
 					<a href="#contact" className="hover:opacity-80">
 						Contact

@@ -22,7 +22,7 @@ export default function Hero() {
                 className="inline-block h-1.5 w-1.5 animate-pulse rounded-full"
                 style={{ background: "var(--accent2)" }}
               />
-              Open to internships & collabs
+              Open to projects & collabs
             </span>
 
             <h1 className="text-4xl md:text-5xl font-semibold tracking-tight leading-tight">
@@ -47,8 +47,7 @@ export default function Hero() {
             </div>
 
             <p className="mt-4 text-lg max-w-xl" style={{ color: "var(--desc-text)" }}>
-              I build fast, clean interfaces with thoughtful details — and I like
-              shipping small, useful things often.
+              I build fast, clean solutions with thoughtful details.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3">
@@ -81,7 +80,7 @@ export default function Hero() {
             {/* This wrapper inherits the row height; the animation fills it */}
             <div className="h-full w-full max-w-[48rem]">
               <DotLottieReact
-                src="anim2.json"
+                src="anim4.json"
                 loop
                 autoplay
                 style={{

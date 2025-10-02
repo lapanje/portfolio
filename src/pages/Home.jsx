@@ -76,31 +76,26 @@ export default function Home() {
 										className="text-lg font-semibold"
 										style={{ color: "var(--text)" }}
 									>
-										A bit about me
+										Hello there 👋
 									</h3>
 									<p
-										className="text-sm leading-relaxed"
+										className="text-sm leading-relaxed text-justify"
 										style={{ color: "var(--desc-text)" }}
 									>
-										I enjoy building fast, readable and
-										reliable software. Clear UX, clean code,
-										and small details matter to me. I like
-										working across the stack and shipping
-										things that feel good to use.
+										I'm 20 years old student from Slovenia. I study Computer Science and Informatics Engineering at <a href="https:\\www.sckr.si" style={{color: "var(--accent)"}}>Šolski center Kranj</a>. 
+										I have a passion for web development and enjoy creating clean, efficient, and user-friendly interfaces.
 									</p>
 									<p
-										className="text-sm leading-relaxed"
+										className="text-sm leading-relaxed text-justify"
 										style={{ color: "var(--desc-text)" }}
 									>
-										Right now I’m focused on modern
-										front‑end with React + Vite, with enough
-										back‑end to make the product real.
-										Always learning, always iterating.
+										In my free time, I like exploring with my motorcycle, hiking in the mountains, and photography.
+										I also enjoy learning new technologies and improving my skills through personal projects and collaborations.
 									</p>
 									{/* 👉 Replace the two paragraphs above with your own short text */}
 								</div>
 
-								{/* RIGHT: Spretnosti */}
+								{/* RIGHT: Skills */}
 								<div className="md:col-span-2">
 									<div
 										className="rounded-xl border h-full"
@@ -136,15 +131,16 @@ export default function Home() {
 														color: "var(--text-secondary)",
 													}}
 												>
-													Core stack
+													core stack
 												</div>
 												<div className="flex flex-wrap gap-2">
 													{[
-														"React",
-														"Vite",
-														"Tailwind",
+														"C++",
 														"C#",
-														"Node",
+														"HTML/CSS",
+														"PHP",
+														"JS",
+														"React",
 														"SQL",
 													].map((s) => (
 														<span
@@ -176,9 +172,9 @@ export default function Home() {
 												<div className="flex flex-wrap gap-2">
 													{[
 														"Git",
-														"Prisma/EF (basics)",
-														"Docker (basics)",
-														"Figma",
+														"Visual Studio",
+														"EF Core",
+														"npm",
 													].map((s) => (
 														<span
 															key={s}
@@ -209,8 +205,8 @@ export default function Home() {
 												<div className="flex flex-wrap gap-2">
 													{[
 														"Component APIs",
-														"State mgmt",
-														"REST",
+														"State Management",
+														"Responsive Design",
 														"Performance",
 														"Accessibility",
 													].map((s) => (
