@@ -26,7 +26,7 @@ export default function Hero() {
             </span>
 
             <h1 className="text-4xl md:text-5xl font-semibold tracking-tight leading-tight">
-              Hi, I’m <span className="gradient-clip">Kristjan</span>
+              Hi, I’m <span className="gradient-clip">Kristjan Lapanje</span>
             </h1>
 
             <div className="mt-1 flex items-center gap-3">
@@ -81,7 +81,7 @@ export default function Hero() {
             {/* This wrapper inherits the row height; the animation fills it */}
             <div className="h-full w-full max-w-[48rem]">
               <DotLottieReact
-                src="https://lottie.host/97fb0f31-bc54-4748-b4be-6ded946d2674/f8oLc3I43z.lottie"
+                src="anim2.json"
                 loop
                 autoplay
                 style={{
