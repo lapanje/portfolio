@@ -11,16 +11,17 @@ function getTheme() {
 export default function TechStrip() {
 	const items = [
 		"React",
-		"JavaScript",
+		"HTML",
+        "PHP",
+        "JavaScript",
+        "CSS",
 		"Vite",
 		"Node",
-		"PostgreSQL",
-		"Prisma",
+		"MySQL",
+		"C#",
+        "C++",
 		"Tailwind",
-		"Framer Motion",
-		"Playwright",
-		"Docker",
-		"CI/CD",
+		"Python"
 	];
 	const scroll = items.concat(items);
 	const [theme, setTheme] = useState(getTheme());

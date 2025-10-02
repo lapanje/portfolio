@@ -15,7 +15,7 @@ function Header() {
 				boxShadow: "0 1px 8px 0 rgba(0,0,0,0.03)",
 			}}
 		>
-			<div className="max-w-5xl mx-auto px-5 py-3 flex items-center justify-between relative">
+			<div className="max-w-6xl mx-auto px-5 py-3 flex items-center justify-between relative">
 				<a
 					href="#home"
 					className="font-bold text-sm md:text-base tracking-widest header-logo"
@@ -33,19 +33,19 @@ function Header() {
 					style={{ pointerEvents: "auto" }}
 				>
 					<a href="#projects" className="hover:opacity-80">
-						Projekti
+						Projects
 					</a>
 					<a href="#experience" className="hover:opacity-80">
-						Izkušnje
+						Experience
 					</a>
 					<a href="#education" className="hover:opacity-80">
-						Izobraževanje
+						Education
 					</a>
 					<a href="#about" className="hover:opacity-80">
-						O meni
+						About me
 					</a>
 					<a href="#contact" className="hover:opacity-80">
-						Kontakt
+						Contact
 					</a>
 				</nav>
 				<div className="flex items-center gap-4">

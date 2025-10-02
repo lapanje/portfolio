@@ -1,7 +1,7 @@
 export default function Section({ eyebrow, title, right, children, id }) {
 	return (
 		<section id={id} style={{ marginBottom: "var(--section-gap)" }}>
-			<div className="max-w-5xl mx-auto px-5">
+			<div className="max-w-6xl mx-auto px-5">
 				{eyebrow && (
 					<p className="mb-2 text-xs uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-400">
 						{eyebrow}

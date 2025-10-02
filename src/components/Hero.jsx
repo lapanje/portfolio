@@ -1,87 +1,84 @@
-import { useRef, useState } from "react";
 import TechStrip from "./TechStrip";
-import ResumeButton from "./ResumeButton";
 import { MoveRight } from "lucide-react";
 
 export default function Hero() {
-	const ref = useRef(null);
-	const [pos, setPos] = useState({ x: 0, y: 0, on: false });
+    return (
+        <section id="home" className="relative z-0 py-20 md:py-32">
+            {/* CONTAINER */}
+            <div className="mx-auto max-w-6xl px-5 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+                {/* LEFT: TEXT */}
+                <div>
+          <span
+              className="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium ring-1 ring-inset mb-4"
+              style={{
+                  background: "var(--badge-bg)",
+                  color: "var(--accent2)",
+                  borderColor: "var(--border)",
+              }}
+          >
+            <span
+                className="inline-block h-1.5 w-1.5 animate-pulse rounded-full"
+                style={{ background: "var(--accent2)" }}
+            />
+            Open to internships & collabs
+          </span>
 
-	function onMove(e) {
-		const r = ref.current?.getBoundingClientRect();
-		if (!r) return;
-		setPos({ x: e.clientX - r.left, y: e.clientY - r.top, on: true });
-	}
-	function onLeave() {
-		setPos((p) => ({ ...p, on: false }));
-	}
+                    <h1 className="text-4xl md:text-5xl font-semibold tracking-tight leading-tight">
+                        Hi, I’m <span className="gradient-clip">Kristjan</span>
+                    </h1>
 
-	return (
-		<section
-			id="home"
-			ref={ref}
-			onMouseMove={onMove}
-			onMouseLeave={onLeave}
-			className="relative z-0"
-		>
-			{/* Mouse-follow glow (same style as ProjectCard) */}
-			<div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
-				<div
-					className="absolute h-[500px] w-[500px] opacity-60 animate-[wiggle_6s_ease-in-out_infinite] blur-2xl"
-					style={{
-						left: `${pos.x - 250}px`,
-						top: `${pos.y - 250}px`,
-						background:
-							"radial-gradient(ellipse at center, rgba(99,102,241,0.09), transparent 70%)",
-						clipPath:
-							"polygon(48% 0%, 61% 9%, 76% 20%, 89% 34%, 100% 50%, 89% 66%, 76% 80%, 61% 91%, 48% 100%, 34% 91%, 20% 80%, 9% 66%, 0% 50%, 9% 34%, 20% 20%, 34% 9%)",
-						transform: pos.on ? "scale(1)" : "scale(0)",
-						transition: "transform 0.3s ease-out",
-					}}
-				/>
-			</div>
+                    {/* CS tag + role */}
+                    <div className="mt-1 flex items-center gap-3">
+                        <span
+                            className="inline-flex items-center justify-center rounded-md px-3 h-8 text-[13px] font-medium leading-none border"
+                            style={{
+                              background: "var(--badge-bg)",
+                              color: "var(--accent2)",
+                              borderColor: "var(--border)",
+                              letterSpacing: "0.08em",
+                            }}
+                            >
+                            CS
+                        </span>
 
-			{/* Content sits above the glow */}
-			<div className="relative z-10 mx-auto max-w-5xl px-5 py-16 text-center md:py-24">
-				<span
-					className="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium ring-1 ring-inset"
-					style={{
-						background: "rgba(16,185,129,0.08)",
-						color: "#059669ff",
-						borderColor: "#a7f3d0",
-					}}
-				>
-					<span className="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-emerald-500" />
-					Open to internships & collabs
-				</span>
+                            <span className="text-4xl md:text-5xl font-semibold leading-none">
+                            student & developer
+                        </span>
+                    </div>
 
-				<h1 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">
-					Živjo, sem <span className="gradient-clip">Kristjan</span> –
-					razvijalec spletnih rešitev.
-				</h1>
+                    <p className="mt-4 text-lg max-w-xl" style={{ color: "var(--desc-text)" }}>
+                        I’m passionate about learning by building — always exploring how software can
+                        solve problems or create new experiences.
+                    </p>
 
-				<p
-					className="mx-auto mt-4 max-w-xl"
-					style={{ color: "var(--desc-text)" }}
-				>
-					Gradim odzivne, pregledne in hitre spletne aplikacije z
-					uporabo sodobnih orodij.
-				</p>
+                    <div className="mt-6 flex gap-4">
+                        <a
+                            href="#projects"
+                            className="inline-flex items-center gap-2 rounded-xl border px-4 py-2 font-medium transition hover:shadow-sm"
+                            style={{ borderColor: "var(--border)", color: "var(--text)" }}
+                        >
+                            Projects <MoveRight size={16} />
+                        </a>
+                    </div>
+                </div>
 
-				<div className="mt-6 flex justify-center gap-3">
-					<a
-						href="#projects"
-						className="inline-flex items-center gap-2 rounded-xl border px-4 py-2 font-medium hover:shadow-sm"
-					>
-						Projekti <MoveRight size={16} />
-					</a>
-					<ResumeButton />
-				</div>
+                {/* RIGHT: IMAGE (contained; no overflow) */}
+                <div className="flex justify-end">
+                    <img
+                        src="/codePc.svg"
+                        alt="Developer illustration"
+                        className="w-full max-w-[22rem] md:max-w-[26rem] h-auto object-contain"
+                        draggable={false}
+                    />
+                </div>
+            </div>
 
-				<div className="mt-10 -mb-6">
-					<TechStrip />
-				</div>
-			</div>
-		</section>
-	);
+            {/* TECH STRIP – same width as hero */}
+            <div className="mt-14">
+                <div className="mx-auto max-w-6xl px-5">
+                    <TechStrip />
+                </div>
+            </div>
+        </section>
+    );
 }
