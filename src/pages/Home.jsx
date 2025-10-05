@@ -4,6 +4,8 @@ import Section from "../components/Section";
 import ProjectCard from "../components/ProjectCard";
 import Footer from "../components/Footer";
 import Reveal from "../components/Reveal";
+import ExperienceItem from "../components/ExperienceItem";
+import EducationItem from "../components/EducationItem";
 import { motion as Motion } from "framer-motion";
 import {
 	Briefcase,
@@ -295,124 +297,20 @@ export default function Home() {
 							className="relative border-s pl-6"
 							style={{ borderColor: "var(--border)" }}
 						>
-							<li className="mb-8">
-								<span
-									className="absolute -start-[9px] mt-1.5 h-4 w-4 rounded-full border"
-									style={{
-										background: "var(--card)",
-										borderColor: "var(--border)",
-									}}
-								/>
-								<div
-									className="rounded-xl border p-4"
-									style={{
-										background: "var(--card)",
-										borderColor: "var(--border)",
-									}}
-								>
-									<div className="flex flex-wrap items-baseline justify-between gap-2">
-										<h4
-											className="text-base font-semibold"
-											style={{ color: "var(--text)" }}
-										>
-											Computer Science and Informatics
-											Engineer
-										</h4>
-										<span
-											className="text-[11px] rounded-md px-2 py-1 border"
-											style={{
-												borderColor: "var(--border)",
-												color: "var(--text-secondary)",
-											}}
-										>
-											2024 — Present
-										</span>
-									</div>
-									<div className="mt-1 text-sm font-medium">
-										School Center Kranj
-									</div>
-									<div className="mt-2 flex flex-wrap items-center gap-2">
-										<a
-											href="https://www.sckr.si"
-											className="text-xs underline"
-											style={{
-												color: "var(--desc-text)",
-											}}
-										>
-											www.sckr.si
-										</a>
-										<span
-											className="text-[11px] rounded-md px-2 py-1 border"
-											style={{
-												borderColor: "var(--border)",
-												color: "var(--text-secondary)",
-											}}
-										>
-											EQF Level 6
-										</span>
-									</div>
-								</div>
-							</li>
-
-							<li>
-								<span
-									className="absolute -start-[9px] mt-1.5 h-4 w-4 rounded-full border"
-									style={{
-										background: "var(--card)",
-										borderColor: "var(--border)",
-									}}
-								/>
-								<div
-									className="rounded-xl border p-4"
-									style={{
-										background: "var(--card)",
-										borderColor: "var(--border)",
-									}}
-								>
-									<div className="flex flex-wrap items-baseline justify-between gap-2">
-										<h4
-											className="text-base font-semibold"
-											style={{ color: "var(--text)" }}
-										>
-											Computer Technician
-										</h4>
-										<span
-											className="text-[11px] rounded-md px-2 py-1 border"
-											style={{
-												borderColor: "var(--border)",
-												color: "var(--text-secondary)",
-											}}
-										>
-											2019 — 2024
-										</span>
-									</div>
-									<div className="mt-1 text-sm font-medium">
-										Electrical Engineering and Computer
-										Science Technical School and Gymnasium
-										Ljubljana
-									</div>
-									<div className="mt-2 flex flex-wrap items-center gap-2">
-										<a
-											href="https://www.vegova.si"
-											className="text-xs underline"
-											style={{
-												color: "var(--desc-text)",
-											}}
-										>
-											www.vegova.si
-										</a>
-										<span
-											className="text-[11px] rounded-md px-2 py-1 border"
-											style={{
-												borderColor: "var(--border)",
-												color: "var(--text-secondary)",
-											}}
-										>
-											EQF Level 5
-										</span>
-									</div>
-								</div>
-							</li>
+							<EducationItem
+								title="Computer Science and Informatics Engineer"
+								period="2024 — Present"
+								institution="Šolski center Kranj"
+								url="https://www.sckr.si"
+								badges={["EQF Level 6"]}
+							/>
+							<EducationItem
+								title="Computer Technician"
+								period="2019 — 2024"
+								institution="Vegova Ljubljana"
+								url="https://www.vegova.si"
+								badges={["EQF Level 5"]}
+							/>
 						</ol>
 					</Reveal>
 				</Section>
@@ -428,310 +326,71 @@ export default function Home() {
 							className="relative border-s pl-6"
 							style={{ borderColor: "var(--border)" }}
 						>
-							{/* LAW OFFICE */}
-							<li className="mb-8">
-								<span
-									className="absolute -start-[9px] mt-1.5 h-4 w-4 rounded-full border"
-									style={{
-										background: "var(--card)",
-										borderColor: "var(--border)",
-									}}
-								/>
-								<div
-									className="rounded-xl border p-4"
-									style={{
-										background: "var(--card)",
-										borderColor: "var(--border)",
-									}}
-								>
-									<div className="flex flex-wrap items-baseline justify-between gap-2">
-										<h4
-											className="text-base font-semibold"
-											style={{ color: "var(--text)" }}
+							<ExperienceItem
+								title="Freelance Software Developer — Odvetniška pisarna Žejn"
+								period="2025"
+								bullets={[
+									"Developed a full-featured C# desktop app for legal case management.",
+									"Included autocomplete client directory, CSV import, and A3 PDF case covers.",
+									"Delivered clean UI and modular architecture for future-proofing.",
+								]}
+								tags={[
+									"C#",
+									"WinForms",
+									"EF Core",
+									"SQLite",
+									"PDF",
+								]}
+							/>
+
+							<ExperienceItem
+								title="Web Developer — Family Business Website"
+								period="2024"
+								bullets={[
+									"Built a responsive website for our family business using WordPress.",
+									"Handled layout, styling, and basic SEO configuration.",
+									<>
+										Website is live at{" "}
+										<a
+											href="https://www.lapanje.si"
+											target="_blank"
+											rel="noopener noreferrer"
+											className="underline"
+											style={{ color: "var(--accent)" }}
 										>
-											Freelance Software Developer —
-											Odvetniška pisarna Žejn
-										</h4>
-										<span
-											className="text-[11px] rounded-md px-2 py-1 border"
-											style={{
-												borderColor: "var(--border)",
-												color: "var(--text-secondary)",
-											}}
-										>
-											2025
-										</span>
-									</div>
+											www.lapanje.si
+										</a>
+										.
+									</>,
+								]}
+								tags={[
+									"WordPress",
+									"HTML",
+									"CSS",
+									"SEO Basics",
+								]}
+							/>
 
-									<ul
-										className="list-disc pl-5 text-sm mt-3"
-										style={{ color: "var(--desc-text)" }}
-									>
-										<li>
-											Developed a full-featured C# desktop
-											app for legal case management.
-										</li>
-										<li>
-											Included autocomplete client
-											directory, CSV import, and A3 PDF
-											case covers.
-										</li>
-										<li>
-											Delivered clean UI and modular
-											architecture for future-proofing.
-										</li>
-									</ul>
+							<ExperienceItem
+								title="Remote Assistant — Društvo pljučnih bolnikov"
+								period="2024 (short term)"
+								bullets={[
+									"Completed Excel-based tasks for internal use.",
+									"Short freelance job done remotely from home.",
+								]}
+								tags={["Excel", "Remote", "Freelance"]}
+							/>
 
-									<div className="mt-3 flex flex-wrap gap-2">
-										{[
-											"C#",
-											"WinForms",
-											"EF Core",
-											"SQLite",
-											"PDF",
-										].map((t) => (
-											<span
-												key={t}
-												className="rounded-md px-2 py-1 text-[11px] font-medium"
-												style={{
-													background:
-														"var(--badge-bg)",
-													color: "var(--badge-text)",
-													border: "1px solid var(--border)",
-												}}
-											>
-												{t}
-											</span>
-										))}
-									</div>
-								</div>
-							</li>
-
-							{/* BUSINESS WEBSITES */}
-							<li className="mb-8">
-								<span
-									className="absolute -start-[9px] mt-1.5 h-4 w-4 rounded-full border"
-									style={{
-										background: "var(--card)",
-										borderColor: "var(--border)",
-									}}
-								/>
-								<div
-									className="rounded-xl border p-4"
-									style={{
-										background: "var(--card)",
-										borderColor: "var(--border)",
-									}}
-								>
-									<div className="flex flex-wrap items-baseline justify-between gap-2">
-										<h4
-											className="text-base font-semibold"
-											style={{ color: "var(--text)" }}
-										>
-											Front-End Developer — Freelance
-											Websites
-										</h4>
-										<span
-											className="text-[11px] rounded-md px-2 py-1 border"
-											style={{
-												borderColor: "var(--border)",
-												color: "var(--text-secondary)",
-											}}
-										>
-											2024 — 2025
-										</span>
-									</div>
-
-									<ul
-										className="list-disc pl-5 text-sm mt-3"
-										style={{ color: "var(--desc-text)" }}
-									>
-										<li>
-											Built two responsive websites for
-											local businesses (services, gallery,
-											contact).
-										</li>
-										<li>
-											Delivered fast-loading HTML/CSS/JS
-											sites with minimal dependencies.
-										</li>
-										<li>
-											Provided handover with instructions
-											and SEO basics.
-										</li>
-									</ul>
-
-									<div className="mt-3 flex flex-wrap gap-2">
-										{[
-											"HTML",
-											"CSS",
-											"JavaScript",
-											"SEO Basics",
-										].map((t) => (
-											<span
-												key={t}
-												className="rounded-md px-2 py-1 text-[11px] font-medium"
-												style={{
-													background:
-														"var(--badge-bg)",
-													color: "var(--badge-text)",
-													border: "1px solid var(--border)",
-												}}
-											>
-												{t}
-											</span>
-										))}
-									</div>
-								</div>
-							</li>
-
-							{/* METRONIK INTERNSHIP (YOUR ORIGINAL) */}
-							<li className="mb-8">
-								<span
-									className="absolute -start-[9px] mt-1.5 h-4 w-4 rounded-full border"
-									style={{
-										background: "var(--card)",
-										borderColor: "var(--border)",
-									}}
-								/>
-								<div
-									className="rounded-xl border p-4"
-									style={{
-										background: "var(--card)",
-										borderColor: "var(--border)",
-									}}
-								>
-									<div className="flex flex-wrap items-baseline justify-between gap-2">
-										<h4
-											className="text-base font-semibold"
-											style={{ color: "var(--text)" }}
-										>
-											Practical Training & Student Work
-										</h4>
-										<span
-											className="text-[11px] rounded-md px-2 py-1 border"
-											style={{
-												borderColor: "var(--border)",
-												color: "var(--text-secondary)",
-											}}
-										>
-											05/2022 — 07/2022
-										</span>
-									</div>
-									<div className="mt-1 text-sm font-medium">
-										Metronik d.o.o., Ljubljana
-									</div>
-
-									<ul
-										className="list-disc pl-5 text-sm mt-3"
-										style={{ color: "var(--desc-text)" }}
-									>
-										<li>
-											Built a C# desktop app to monitor
-											and visualize alarms via SQL
-											queries.
-										</li>
-										<li>
-											Prepared filters, processed data,
-											and delivered a clean, usable UI.
-										</li>
-										<li>
-											Worked with PLC/controller software
-											to test and verify integrations.
-										</li>
-									</ul>
-
-									<div className="mt-3 flex flex-wrap gap-2">
-										{[
-											"C#",
-											"WinForms/WPF",
-											"SQL",
-											"UI/UX",
-										].map((t) => (
-											<span
-												key={t}
-												className="rounded-md px-2 py-1 text-[11px] font-medium"
-												style={{
-													background:
-														"var(--badge-bg)",
-													color: "var(--badge-text)",
-													border: "1px solid var(--border)",
-												}}
-											>
-												{t}
-											</span>
-										))}
-									</div>
-								</div>
-							</li>
-
-							{/* OPTIONAL – SHORT EXCEL GIG */}
-							<li>
-								<span
-									className="absolute -start-[9px] mt-1.5 h-4 w-4 rounded-full border"
-									style={{
-										background: "var(--card)",
-										borderColor: "var(--border)",
-									}}
-								/>
-								<div
-									className="rounded-xl border p-4"
-									style={{
-										background: "var(--card)",
-										borderColor: "var(--border)",
-									}}
-								>
-									<div className="flex flex-wrap items-baseline justify-between gap-2">
-										<h4
-											className="text-base font-semibold"
-											style={{ color: "var(--text)" }}
-										>
-											Remote Assistant — Društvo pljučnih
-											bolnikov
-										</h4>
-										<span
-											className="text-[11px] rounded-md px-2 py-1 border"
-											style={{
-												borderColor: "var(--border)",
-												color: "var(--text-secondary)",
-											}}
-										>
-											2023 (short term)
-										</span>
-									</div>
-
-									<ul
-										className="list-disc pl-5 text-sm mt-3"
-										style={{ color: "var(--desc-text)" }}
-									>
-										<li>
-											Prepared Excel reports and performed
-											data cleanup for a healthcare NGO.
-										</li>
-									</ul>
-
-									<div className="mt-3 flex flex-wrap gap-2">
-										{[
-											"Excel",
-											"Data Cleaning",
-											"Reports",
-										].map((t) => (
-											<span
-												key={t}
-												className="rounded-md px-2 py-1 text-[11px] font-medium"
-												style={{
-													background:
-														"var(--badge-bg)",
-													color: "var(--badge-text)",
-													border: "1px solid var(--border)",
-												}}
-											>
-												{t}
-											</span>
-										))}
-									</div>
-								</div>
-							</li>
+							<ExperienceItem
+								title="Practical Training & Student Work — Metronik d.o.o., Ljubljana"
+								period="05/2022 — 07/2022"
+								bullets={[
+									"Built a C# desktop app to monitor and visualize alarms via SQL queries.",
+									"Prepared filters, processed data, and delivered a clean, usable UI.",
+									"Worked with PLC/controller software to test and verify integrations.",
+								]}
+								tags={["C#", "WinForms/WPF", "SQL", "UI/UX"]}
+							/>
 						</ol>
 					</Reveal>
 				</Section>
