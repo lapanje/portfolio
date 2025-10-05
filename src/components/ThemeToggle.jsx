@@ -51,11 +51,11 @@ export default function ThemeToggle() {
 	return (
 		<button
 			onClick={toggle}
-			className="rounded-lg border p-2 flex items-center gap-2 hover:bg-neutral-50 dark:hover:bg-neutral-800"
+			className="rounded-lg border p-2 flex items-center gap-2 hover:bg-[var(--bg-secondary)] transition-colors"
 			style={{
-				background: theme === "dark" ? "transparent" : "white",
-				color: theme === "dark" ? "#fff" : "#18181b",
-				borderColor: theme === "dark" ? "#fff" : "#18181b",
+				background: "var(--card)",
+				color: "var(--text)",
+				borderColor: "var(--border)",
 				fontWeight: 500,
 			}}
 			aria-label="Toggle theme"
@@ -63,7 +63,7 @@ export default function ThemeToggle() {
 			{theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
 			<span
 				className="text-sm font-semibold"
-				style={{ color: theme === "dark" ? "#fff" : "#18181b" }}
+				style={{ color: "var(--text)" }}
 			>
 				{theme === "dark" ? "Dark" : "Light"}
 			</span>

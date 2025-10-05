@@ -48,25 +48,7 @@ function Header() {
 						Contact
 					</a>
 				</nav>
-				<div className="flex items-center gap-4">
-					<a
-						aria-label="GitHub"
-						href={LINKS.github}
-						target="_blank"
-						rel="noreferrer"
-						className="rounded-lg border p-2 hover:bg-neutral-50 dark:hover:bg-neutral-800"
-					>
-						<Github size={18} />
-					</a>
-					<a
-						aria-label="Email"
-						href={LINKS.email}
-						className="rounded-lg border p-2 hover:bg-neutral-50 dark:hover:bg-neutral-800"
-					>
-						<Mail size={18} />
-					</a>
 					<ThemeToggle />
-				</div>
 			</div>
 		</header>
 	);

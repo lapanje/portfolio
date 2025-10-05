@@ -5,7 +5,16 @@ import ProjectCard from "../components/ProjectCard";
 import Footer from "../components/Footer";
 import Reveal from "../components/Reveal";
 import { motion as Motion } from "framer-motion";
-import { Briefcase, User, Code2, GraduationCap } from "lucide-react";
+import {
+	Briefcase,
+	User,
+	Code2,
+	GraduationCap,
+	Github,
+	Mail,
+	Wrench,
+	Instagram,
+} from "lucide-react";
 
 const projects = [
 	{
@@ -82,15 +91,29 @@ export default function Home() {
 										className="text-sm leading-relaxed text-justify"
 										style={{ color: "var(--desc-text)" }}
 									>
-										I'm 20 years old student from Slovenia. I study Computer Science and Informatics Engineering at <a href="https:\\www.sckr.si" style={{color: "var(--accent)"}}>Šolski center Kranj</a>. 
-										I have a passion for web development and enjoy creating clean, efficient, and user-friendly interfaces.
+										I'm 20 years old student from Slovenia.
+										I study Computer Science and Informatics
+										Engineering at{" "}
+										<a
+											href="https:\\www.sckr.si"
+											style={{ color: "var(--accent)" }}
+										>
+											Šolski center Kranj
+										</a>
+										. I have a passion for web development
+										and enjoy creating clean, efficient, and
+										user-friendly interfaces.
 									</p>
 									<p
 										className="text-sm leading-relaxed text-justify"
 										style={{ color: "var(--desc-text)" }}
 									>
-										In my free time, I like exploring with my motorcycle, hiking in the mountains, and photography.
-										I also enjoy learning new technologies and improving my skills through personal projects and collaborations.
+										In my free time, I like exploring with
+										my motorcycle, hiking in the mountains,
+										and photography. I also enjoy learning
+										new technologies and improving my skills
+										through personal projects and
+										collaborations.
 									</p>
 									{/* 👉 Replace the two paragraphs above with your own short text */}
 								</div>
@@ -244,6 +267,7 @@ export default function Home() {
 					id="projects"
 					eyebrow="Selected Works"
 					title="Projects"
+					right={<Wrench size={18} className="opacity-70" />}
 				>
 					<Motion.div
 						variants={gridVariants}
@@ -267,61 +291,126 @@ export default function Home() {
 					right={<GraduationCap size={18} className="opacity-70" />}
 				>
 					<Reveal>
-						<ol className="relative border-s pl-6">
+						<ol
+							className="relative border-s pl-6"
+							style={{ borderColor: "var(--border)" }}
+						>
 							<li className="mb-8">
 								<span
-									className="absolute -start-[9px] mt-1.5 h-4 w-4 rounded-full border bg-white dark:bg-neutral-900"
-									style={{ background: "var(--card)" }}
+									className="absolute -start-[9px] mt-1.5 h-4 w-4 rounded-full border"
+									style={{
+										background: "var(--card)",
+										borderColor: "var(--border)",
+									}}
 								/>
 								<div
-									className="text-xs uppercase tracking-wide font-semibold"
-									style={{ color: "var(--text-secondary)" }}
+									className="rounded-xl border p-4"
+									style={{
+										background: "var(--card)",
+										borderColor: "var(--border)",
+									}}
 								>
-									2024 - Present
-								</div>
-								<div className="text-base font-semibold">
-									Computer Science and Informatics Engineer
-								</div>
-								<div className="text-sm mt-1 font-medium">
-									Šolski center Kranj
-								</div>
-								<div className="text-xs mt-1">
-									Website{" "}
-									<a
-										href="https://www.sckr.si"
-										className="underline"
-									>
-										www.sckr.si
-									</a>{" "}
-									| EQF Level 6
+									<div className="flex flex-wrap items-baseline justify-between gap-2">
+										<h4
+											className="text-base font-semibold"
+											style={{ color: "var(--text)" }}
+										>
+											Computer Science and Informatics
+											Engineer
+										</h4>
+										<span
+											className="text-[11px] rounded-md px-2 py-1 border"
+											style={{
+												borderColor: "var(--border)",
+												color: "var(--text-secondary)",
+											}}
+										>
+											2024 — Present
+										</span>
+									</div>
+									<div className="mt-1 text-sm font-medium">
+										School Center Kranj
+									</div>
+									<div className="mt-2 flex flex-wrap items-center gap-2">
+										<a
+											href="https://www.sckr.si"
+											className="text-xs underline"
+											style={{
+												color: "var(--desc-text)",
+											}}
+										>
+											www.sckr.si
+										</a>
+										<span
+											className="text-[11px] rounded-md px-2 py-1 border"
+											style={{
+												borderColor: "var(--border)",
+												color: "var(--text-secondary)",
+											}}
+										>
+											EQF Level 6
+										</span>
+									</div>
 								</div>
 							</li>
+
 							<li>
 								<span
-									className="absolute -start-[9px] mt-1.5 h-4 w-4 rounded-full border bg-white dark:bg-neutral-900"
-									style={{ background: "var(--card)" }}
+									className="absolute -start-[9px] mt-1.5 h-4 w-4 rounded-full border"
+									style={{
+										background: "var(--card)",
+										borderColor: "var(--border)",
+									}}
 								/>
 								<div
-									className="text-xs uppercase tracking-wide font-semibold"
-									style={{ color: "var(--text-secondary)" }}
+									className="rounded-xl border p-4"
+									style={{
+										background: "var(--card)",
+										borderColor: "var(--border)",
+									}}
 								>
-									2019 - 2024
-								</div>
-								<div className="text-base font-semibold">
-									Computer Technician
-								</div>
-								<div className="text-sm mt-1 font-medium">
-									Vegova Ljubljana
-								</div>
-								<div className="text-xs mt-1">
-									Website{" "}
-									<a
-										href="https://www.vegova.si"
-										className="underline"
-									>
-										www.vegova.si
-									</a>{" "}
-									| EQF Level 5
+									<div className="flex flex-wrap items-baseline justify-between gap-2">
+										<h4
+											className="text-base font-semibold"
+											style={{ color: "var(--text)" }}
+										>
+											Computer Technician
+										</h4>
+										<span
+											className="text-[11px] rounded-md px-2 py-1 border"
+											style={{
+												borderColor: "var(--border)",
+												color: "var(--text-secondary)",
+											}}
+										>
+											2019 — 2024
+										</span>
+									</div>
+									<div className="mt-1 text-sm font-medium">
+										Electrical Engineering and Computer
+										Science Technical School and Gymnasium
+										Ljubljana
+									</div>
+									<div className="mt-2 flex flex-wrap items-center gap-2">
+										<a
+											href="https://www.vegova.si"
+											className="text-xs underline"
+											style={{
+												color: "var(--desc-text)",
+											}}
+										>
+											www.vegova.si
+										</a>
+										<span
+											className="text-[11px] rounded-md px-2 py-1 border"
+											style={{
+												borderColor: "var(--border)",
+												color: "var(--text-secondary)",
+											}}
+										>
+											EQF Level 5
+										</span>
+									</div>
 								</div>
 							</li>
 						</ol>
@@ -335,47 +424,471 @@ export default function Home() {
 					right={<Briefcase size={18} className="opacity-70" />}
 				>
 					<Reveal>
-						<ol className="relative border-s pl-6">
+						<ol
+							className="relative border-s pl-6"
+							style={{ borderColor: "var(--border)" }}
+						>
+							{/* LAW OFFICE */}
 							<li className="mb-8">
 								<span
-									className="absolute -start-[9px] mt-1.5 h-4 w-4 rounded-full border bg-white dark:bg-neutral-900"
-									style={{ background: "var(--card)" }}
+									className="absolute -start-[9px] mt-1.5 h-4 w-4 rounded-full border"
+									style={{
+										background: "var(--card)",
+										borderColor: "var(--border)",
+									}}
 								/>
 								<div
-									className="text-xs uppercase tracking-wide font-semibold"
-									style={{ color: "var(--text-secondary)" }}
+									className="rounded-xl border p-4"
+									style={{
+										background: "var(--card)",
+										borderColor: "var(--border)",
+									}}
 								>
-									05/2022 - 07/2022
+									<div className="flex flex-wrap items-baseline justify-between gap-2">
+										<h4
+											className="text-base font-semibold"
+											style={{ color: "var(--text)" }}
+										>
+											Freelance Software Developer —
+											Odvetniška pisarna Žejn
+										</h4>
+										<span
+											className="text-[11px] rounded-md px-2 py-1 border"
+											style={{
+												borderColor: "var(--border)",
+												color: "var(--text-secondary)",
+											}}
+										>
+											2025
+										</span>
+									</div>
+
+									<ul
+										className="list-disc pl-5 text-sm mt-3"
+										style={{ color: "var(--desc-text)" }}
+									>
+										<li>
+											Developed a full-featured C# desktop
+											app for legal case management.
+										</li>
+										<li>
+											Included autocomplete client
+											directory, CSV import, and A3 PDF
+											case covers.
+										</li>
+										<li>
+											Delivered clean UI and modular
+											architecture for future-proofing.
+										</li>
+									</ul>
+
+									<div className="mt-3 flex flex-wrap gap-2">
+										{[
+											"C#",
+											"WinForms",
+											"EF Core",
+											"SQLite",
+											"PDF",
+										].map((t) => (
+											<span
+												key={t}
+												className="rounded-md px-2 py-1 text-[11px] font-medium"
+												style={{
+													background:
+														"var(--badge-bg)",
+													color: "var(--badge-text)",
+													border: "1px solid var(--border)",
+												}}
+											>
+												{t}
+											</span>
+										))}
+									</div>
 								</div>
-								<div className="text-base font-semibold">
-									Practical Training and Student Summer Work
-								</div>
-								<div className="text-sm mt-1 font-medium">
-									Metronik d.o.o., Ljubljana
-								</div>
-								<ul
-									className="list-disc pl-5 text-sm mt-2"
-									style={{ color: "var(--desc-text)" }}
+							</li>
+
+							{/* BUSINESS WEBSITES */}
+							<li className="mb-8">
+								<span
+									className="absolute -start-[9px] mt-1.5 h-4 w-4 rounded-full border"
+									style={{
+										background: "var(--card)",
+										borderColor: "var(--border)",
+									}}
+								/>
+								<div
+									className="rounded-xl border p-4"
+									style={{
+										background: "var(--card)",
+										borderColor: "var(--border)",
+									}}
 								>
-									<li>
-										Developed a C# application for
-										monitoring and visualizing alarms using
-										SQL queries
-									</li>
-									<li>
-										Data processing, filter configuration,
-										and basic user interface preparation
-									</li>
-									<li>
-										Basic work with PLC and controller
-										software
-									</li>
-								</ul>
+									<div className="flex flex-wrap items-baseline justify-between gap-2">
+										<h4
+											className="text-base font-semibold"
+											style={{ color: "var(--text)" }}
+										>
+											Front-End Developer — Freelance
+											Websites
+										</h4>
+										<span
+											className="text-[11px] rounded-md px-2 py-1 border"
+											style={{
+												borderColor: "var(--border)",
+												color: "var(--text-secondary)",
+											}}
+										>
+											2024 — 2025
+										</span>
+									</div>
+
+									<ul
+										className="list-disc pl-5 text-sm mt-3"
+										style={{ color: "var(--desc-text)" }}
+									>
+										<li>
+											Built two responsive websites for
+											local businesses (services, gallery,
+											contact).
+										</li>
+										<li>
+											Delivered fast-loading HTML/CSS/JS
+											sites with minimal dependencies.
+										</li>
+										<li>
+											Provided handover with instructions
+											and SEO basics.
+										</li>
+									</ul>
+
+									<div className="mt-3 flex flex-wrap gap-2">
+										{[
+											"HTML",
+											"CSS",
+											"JavaScript",
+											"SEO Basics",
+										].map((t) => (
+											<span
+												key={t}
+												className="rounded-md px-2 py-1 text-[11px] font-medium"
+												style={{
+													background:
+														"var(--badge-bg)",
+													color: "var(--badge-text)",
+													border: "1px solid var(--border)",
+												}}
+											>
+												{t}
+											</span>
+										))}
+									</div>
+								</div>
+							</li>
+
+							{/* METRONIK INTERNSHIP (YOUR ORIGINAL) */}
+							<li className="mb-8">
+								<span
+									className="absolute -start-[9px] mt-1.5 h-4 w-4 rounded-full border"
+									style={{
+										background: "var(--card)",
+										borderColor: "var(--border)",
+									}}
+								/>
+								<div
+									className="rounded-xl border p-4"
+									style={{
+										background: "var(--card)",
+										borderColor: "var(--border)",
+									}}
+								>
+									<div className="flex flex-wrap items-baseline justify-between gap-2">
+										<h4
+											className="text-base font-semibold"
+											style={{ color: "var(--text)" }}
+										>
+											Practical Training & Student Work
+										</h4>
+										<span
+											className="text-[11px] rounded-md px-2 py-1 border"
+											style={{
+												borderColor: "var(--border)",
+												color: "var(--text-secondary)",
+											}}
+										>
+											05/2022 — 07/2022
+										</span>
+									</div>
+									<div className="mt-1 text-sm font-medium">
+										Metronik d.o.o., Ljubljana
+									</div>
+
+									<ul
+										className="list-disc pl-5 text-sm mt-3"
+										style={{ color: "var(--desc-text)" }}
+									>
+										<li>
+											Built a C# desktop app to monitor
+											and visualize alarms via SQL
+											queries.
+										</li>
+										<li>
+											Prepared filters, processed data,
+											and delivered a clean, usable UI.
+										</li>
+										<li>
+											Worked with PLC/controller software
+											to test and verify integrations.
+										</li>
+									</ul>
+
+									<div className="mt-3 flex flex-wrap gap-2">
+										{[
+											"C#",
+											"WinForms/WPF",
+											"SQL",
+											"UI/UX",
+										].map((t) => (
+											<span
+												key={t}
+												className="rounded-md px-2 py-1 text-[11px] font-medium"
+												style={{
+													background:
+														"var(--badge-bg)",
+													color: "var(--badge-text)",
+													border: "1px solid var(--border)",
+												}}
+											>
+												{t}
+											</span>
+										))}
+									</div>
+								</div>
+							</li>
+
+							{/* OPTIONAL – SHORT EXCEL GIG */}
+							<li>
+								<span
+									className="absolute -start-[9px] mt-1.5 h-4 w-4 rounded-full border"
+									style={{
+										background: "var(--card)",
+										borderColor: "var(--border)",
+									}}
+								/>
+								<div
+									className="rounded-xl border p-4"
+									style={{
+										background: "var(--card)",
+										borderColor: "var(--border)",
+									}}
+								>
+									<div className="flex flex-wrap items-baseline justify-between gap-2">
+										<h4
+											className="text-base font-semibold"
+											style={{ color: "var(--text)" }}
+										>
+											Remote Assistant — Društvo pljučnih
+											bolnikov
+										</h4>
+										<span
+											className="text-[11px] rounded-md px-2 py-1 border"
+											style={{
+												borderColor: "var(--border)",
+												color: "var(--text-secondary)",
+											}}
+										>
+											2023 (short term)
+										</span>
+									</div>
+
+									<ul
+										className="list-disc pl-5 text-sm mt-3"
+										style={{ color: "var(--desc-text)" }}
+									>
+										<li>
+											Prepared Excel reports and performed
+											data cleanup for a healthcare NGO.
+										</li>
+									</ul>
+
+									<div className="mt-3 flex flex-wrap gap-2">
+										{[
+											"Excel",
+											"Data Cleaning",
+											"Reports",
+										].map((t) => (
+											<span
+												key={t}
+												className="rounded-md px-2 py-1 text-[11px] font-medium"
+												style={{
+													background:
+														"var(--badge-bg)",
+													color: "var(--badge-text)",
+													border: "1px solid var(--border)",
+												}}
+											>
+												{t}
+											</span>
+										))}
+									</div>
+								</div>
 							</li>
 						</ol>
 					</Reveal>
 				</Section>
 
+				<Section
+					id="contact"
+					eyebrow="Get in touch"
+					title="Contact"
+					right={<Mail size={18} className="opacity-70" />}
+				>
+					<Reveal>
+						<div
+							className="rounded-2xl border overflow-hidden"
+							style={{
+								background: "var(--card)",
+								borderColor: "var(--border)",
+							}}
+						>
+							<div className="p-6 md:p-8 grid md:grid-cols-2 gap-8">
+								{/* LEFT: intro */}
+								<div className="space-y-4">
+									<h3
+										className="text-lg font-semibold"
+										style={{ color: "var(--text)" }}
+									>
+										Let’s connect
+									</h3>
+									<p
+										className="text-sm leading-relaxed"
+										style={{ color: "var(--desc-text)" }}
+									>
+										If something you saw here sparked an
+										idea or you'd like to work together,
+										<br />
+										feel free to reach out. I'm just a
+										message away.
+									</p>
+								</div>
+
+								{/* RIGHT: action cards */}
+								<div className="grid gap-3">
+									{/* Email */}
+									<a
+										href="mailto:kristjan.lapanje@gmail.com"
+										className="group flex items-center justify-between gap-3 rounded-lg border px-4 py-3 text-sm hover:shadow-sm transition"
+										style={{
+											background: "var(--bg)",
+											borderColor: "var(--border)",
+											color: "var(--text)",
+										}}
+									>
+										<div className="flex items-center gap-2">
+											<span
+												className="inline-flex h-7 w-7 items-center justify-center rounded-lg border"
+												style={{
+													borderColor:
+														"var(--border)",
+													background: "var(--card)",
+												}}
+											>
+												<Mail
+													size={16}
+													className="opacity-70"
+												/>
+											</span>
+											<span>Email</span>
+										</div>
+										<span
+											className="text-xs"
+											style={{
+												color: "var(--text-secondary)",
+											}}
+										>
+											kristjan.lapanje@gmail.com
+										</span>
+									</a>
+
+									{/* GitHub */}
+									<a
+										href="https://github.com/lapanje"
+										target="_blank"
+										rel="noopener noreferrer"
+										className="group flex items-center justify-between gap-3 rounded-lg border px-4 py-3 text-sm hover:shadow-sm transition"
+										style={{
+											background: "var(--bg)",
+											borderColor: "var(--border)",
+											color: "var(--text)",
+										}}
+									>
+										<div className="flex items-center gap-2">
+											<span
+												className="inline-flex h-7 w-7 items-center justify-center rounded-lg border"
+												style={{
+													borderColor:
+														"var(--border)",
+													background: "var(--card)",
+												}}
+											>
+												<Github
+													size={16}
+													className="opacity-70"
+												/>
+											</span>
+											<span>GitHub</span>
+										</div>
+										<span
+											className="text-xs"
+											style={{
+												color: "var(--text-secondary)",
+											}}
+										>
+											@lapanje
+										</span>
+									</a>
+
+									{/* Instagram */}
+									<a
+										href="https://instagram.com/kristjanlapanje"
+										target="_blank"
+										rel="noopener noreferrer"
+										className="group flex items-center justify-between gap-3 rounded-lg border px-4 py-3 text-sm hover:shadow-sm transition"
+										style={{
+											background: "var(--bg)",
+											borderColor: "var(--border)",
+											color: "var(--text)",
+										}}
+									>
+										<div className="flex items-center gap-2">
+											<span
+												className="inline-flex h-7 w-7 items-center justify-center rounded-lg border"
+												style={{
+													borderColor:
+														"var(--border)",
+													background: "var(--card)",
+												}}
+											>
+												<Instagram
+													size={16}
+													className="opacity-70"
+												/>
+											</span>
+											<span>Instagram</span>
+										</div>
+										<span
+											className="text-xs"
+											style={{
+												color: "var(--text-secondary)",
+											}}
+										>
+											@kristjanlapanje
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</Reveal>
+				</Section>
 			</div>
 			<Footer />
 		</div>

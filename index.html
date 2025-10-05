@@ -16,7 +16,7 @@
 				try {
 					var saved = localStorage.getItem("theme"); // 'dark' | 'light' | null
 					var theme =
-						saved === "light" || saved === "dark" ? saved : "dark"; // default = dark
+						saved === "light" || saved === "dark" ? saved : "light"; // default = light
 					if (theme === "dark") {
 						root.classList.add("dark");
 					} else {
