@@ -37,7 +37,7 @@ export default function EducationItem({ title, period, institution, url, badges 
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs underline"
-              style={{ color: "var(--desc-text)" }}
+              style={{ color: "var(--accent)" }}
             >
               {url.replace(/^https?:\/\//, "")}
             </a>

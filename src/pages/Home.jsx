@@ -100,7 +100,7 @@ export default function Home() {
 											href="https:\\www.sckr.si"
 											style={{ color: "var(--accent)" }}
 										>
-											Šolski center Kranj
+											School Center Kranj
 										</a>
 										. I have a passion for web development
 										and enjoy creating clean, efficient, and
@@ -300,14 +300,14 @@ export default function Home() {
 							<EducationItem
 								title="Computer Science and Informatics Engineer"
 								period="2024 — Present"
-								institution="Šolski center Kranj"
+								institution="School Center Kranj"
 								url="https://www.sckr.si"
 								badges={["EQF Level 6"]}
 							/>
 							<EducationItem
 								title="Computer Technician"
 								period="2019 — 2024"
-								institution="Vegova Ljubljana"
+								institution="Electrical Engineering and Computer Science Technical School and Gymnasium Ljubljana"
 								url="https://www.vegova.si"
 								badges={["EQF Level 5"]}
 							/>

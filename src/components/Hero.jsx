@@ -53,15 +53,15 @@ export default function Hero() {
             <div className="mt-6 flex flex-wrap gap-3">
               <a
                 href="#projects"
-                className="inline-flex items-center gap-2 rounded-xl border px-4 py-2 font-medium transition hover:shadow-sm"
+                className="inline-flex items-center gap-2 rounded-xl border px-4 py-2 font-medium  hover:shadow-sm"
                 style={{ borderColor: "var(--border)", color: "var(--text)" }}
               >
                 Projects <MoveRight size={16} />
               </a>
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 rounded-xl px-4 py-2 font-medium"
-                style={{ background: "var(--accent)", color: "#fff" }}
+                className="inline-flex items-center gap-2 rounded-xl border px-4 py-2 font-medium"
+                style={{ background: "var(--accent)", color: "#fff", borderColor: "var(--border"}}
               >
                 Contact
               </a>

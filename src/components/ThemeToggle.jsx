@@ -55,7 +55,7 @@ export default function ThemeToggle() {
 			style={{
 				background: "var(--card)",
 				color: "var(--text)",
-				borderColor: "var(--border)",
+				borderColor: "var(--text)",
 				fontWeight: 500,
 			}}
 			aria-label="Toggle theme"
