@@ -1,10 +1,16 @@
 // ProjectCard.jsx
 import { motion as Motion } from "framer-motion";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Lock } from "lucide-react";
 
-export default function ProjectCard({ title, tech = [], desc, href, repo }) {
+export default function ProjectCard({
+  title,
+  tech = [],
+  desc,
+  href,           // optional live/demo link
+  repo,           // optional repo link
+  isPrivate = false, // set true when code can't be shared
+}) {
   const slug = (title || "").toLowerCase().replace(/\s+/g, "-");
-  if (repo === undefined) repo = "https://github.com/test";
 
   return (
     <Motion.article
@@ -33,7 +39,22 @@ export default function ProjectCard({ title, tech = [], desc, href, repo }) {
         </div>
 
         <div className="flex items-center gap-2">
-          {repo && (
+          {isPrivate && (
+            <span
+              className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-xs border"
+              style={{
+                background: "transparent",
+                color: "var(--text-secondary)",
+                borderColor: "var(--border)",
+              }}
+              title="Source code is private"
+            >
+              <Lock size={14} />
+              Private
+            </span>
+          )}
+
+          {!isPrivate && repo && (
             <a
               href={repo}
               className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-xs border"
@@ -47,6 +68,7 @@ export default function ProjectCard({ title, tech = [], desc, href, repo }) {
               Code
             </a>
           )}
+
           {href && (
             <a
               href={href}

@@ -57,6 +57,11 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+/* Global font for the site (header logo uses inline Comfortaa) */
+html, body {
+  font-family: Montserrat;
+}
+
 /* smooth feel */
 html {
 	scroll-behavior: smooth;

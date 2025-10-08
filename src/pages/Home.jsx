@@ -20,28 +20,28 @@ import {
 
 const projects = [
 	{
-		title: "Real-Time Chat",
-		tech: ["React", "WebSocket", "Node"],
-		desc: "Optimistic UI, presence, message caching.",
-		slug: "realtime-chat",
+		title: "Law Firm Management App",
+		tech: ["C#", "WPF", "EF Core", "SQLite", "PDF"],
+		desc: "Desktop app for a local law office to manage clients and cases.",
+		isPrivate: true,
 	},
 	{
-		title: "Algorithm Visualizer",
-		tech: ["Canvas", "React"],
-		desc: "Path-finding and sorting visualizations with precise timing.",
-		slug: "algo-visualizer",
+		title: "Student Management Web App",
+		tech: ["PHP", "MySQL", "HTML/CSS"],
+		desc: "Login, CRUD for student records, and basic filtering/sorting.",
+		repo: "https://github.com/youruser/student-management", // remove if unavailable
 	},
 	{
-		title: "Portfolio CMS",
-		tech: ["Vite", "React", "MDX"],
-		desc: "Content-based portfolio with MDX and code blocks.",
-		slug: "portfolio-cms",
+		title: "2D Platformer (SDL2)",
+		tech: ["C++", "SDL2"],
+		desc: "School project focused on game loop, rendering, and collision. (Code lost.)",
+		isPrivate: true,
 	},
 	{
-		title: "3D Configurator",
-		tech: ["React", "Three.js"],
-		desc: "Parametric materials, lighting settings, screenshots.",
-		slug: "3d-configurator",
+		title: "Family Business Website",
+		tech: ["WordPress", "HTML", "CSS", "SEO"],
+		desc: "Responsive site with custom layout and basic SEO for a local business.",
+		href: "https://www.lapanje.si",
 	},
 ];
 
@@ -117,7 +117,6 @@ export default function Home() {
 										through personal projects and
 										collaborations.
 									</p>
-									{/* 👉 Replace the two paragraphs above with your own short text */}
 								</div>
 
 								{/* RIGHT: Skills */}
@@ -327,7 +326,7 @@ export default function Home() {
 							style={{ borderColor: "var(--border)" }}
 						>
 							<ExperienceItem
-								title="Freelance Software Developer — Odvetniška pisarna Žejn"
+								title="Software Developer — Odvetniška pisarna Žejn"
 								period="2025"
 								bullets={[
 									"Developed a full-featured C# desktop app for legal case management.",
@@ -375,7 +374,7 @@ export default function Home() {
 								title="Remote Assistant — Društvo pljučnih bolnikov"
 								period="2024 (short term)"
 								bullets={[
-									"Completed Excel-based tasks for internal use.",
+									"Completed Excel-based tasks.",
 									"Short freelance job done remotely from home.",
 								]}
 								tags={["Excel", "Remote", "Freelance"]}
