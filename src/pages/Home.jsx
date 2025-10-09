@@ -34,7 +34,7 @@ const projects = [
 	{
 		title: "2D Platformer (SDL2)",
 		tech: ["C++", "SDL2"],
-		desc: "School project focused on game loop, rendering, and collision. (Code lost.)",
+		desc: "School project focused on game loop, rendering, and collision.",
 		isPrivate: true,
 	},
 	{
@@ -49,12 +49,13 @@ const gridVariants = {
 	hidden: { opacity: 0 },
 	show: {
 		opacity: 1,
-		transition: { when: "beforeChildren", staggerChildren: 0.08 },
+		// smaller stagger so children show quicker
+		transition: { when: "beforeChildren", staggerChildren: 0.04 },
 	},
 };
 const itemVariants = {
-	hidden: { opacity: 0, y: 12 },
-	show: { opacity: 1, y: 0, transition: { duration: 0.45 } },
+	hidden: { opacity: 0, y: 8 },
+	show: { opacity: 1, y: 0, transition: { duration: 0.32 } },
 };
 
 export default function Home() {
@@ -98,6 +99,8 @@ export default function Home() {
 										Engineering at{" "}
 										<a
 											href="https:\\www.sckr.si"
+											target="_blank"
+											className="underline"
 											style={{ color: "var(--accent)" }}
 										>
 											School Center Kranj
@@ -125,7 +128,7 @@ export default function Home() {
 										className="rounded-xl border h-full"
 										style={{
 											borderColor: "var(--border)",
-											background: "var(--bg)",
+											background: "var(--bg-secondary)",
 										}}
 									>
 										<div
@@ -330,7 +333,7 @@ export default function Home() {
 								period="2025"
 								bullets={[
 									"Developed a full-featured C# desktop app for legal case management.",
-									"Included autocomplete client directory, CSV import, and A3 PDF case covers.",
+									"Included autocomplete client directory, CSV import, and PDF generation.",
 									"Delivered clean UI and modular architecture for future-proofing.",
 								]}
 								tags={[
@@ -355,7 +358,7 @@ export default function Home() {
 											target="_blank"
 											rel="noopener noreferrer"
 											className="underline"
-											style={{ color: "var(--accent)" }}
+											style={{ color: "var(--accent)"}}
 										>
 											www.lapanje.si
 										</a>
@@ -371,7 +374,7 @@ export default function Home() {
 							/>
 
 							<ExperienceItem
-								title="Remote Assistant — Društvo pljučnih bolnikov"
+								title="Remote Assistant — Društvo pljučnih bolnikov in alergikov"
 								period="2024 (short term)"
 								bullets={[
 									"Completed Excel-based tasks.",
@@ -423,8 +426,8 @@ export default function Home() {
 									>
 										If something you saw here sparked an
 										idea or you'd like to work together,
-										<br />
-										feel free to reach out. I'm just a
+										feel free to reach out.
+										I'm just a
 										message away.
 									</p>
 								</div>
@@ -436,7 +439,7 @@ export default function Home() {
 										href="mailto:kristjan.lapanje@gmail.com"
 										className="group flex items-center justify-between gap-3 rounded-lg border px-4 py-3 text-sm hover:shadow-sm transition"
 										style={{
-											background: "var(--bg)",
+											background: "var(--bg-secondary)",
 											borderColor: "var(--border)",
 											color: "var(--text)",
 										}}
@@ -474,7 +477,7 @@ export default function Home() {
 										rel="noopener noreferrer"
 										className="group flex items-center justify-between gap-3 rounded-lg border px-4 py-3 text-sm hover:shadow-sm transition"
 										style={{
-											background: "var(--bg)",
+											background: "var(--bg-secondary)",
 											borderColor: "var(--border)",
 											color: "var(--text)",
 										}}
@@ -512,7 +515,7 @@ export default function Home() {
 										rel="noopener noreferrer"
 										className="group flex items-center justify-between gap-3 rounded-lg border px-4 py-3 text-sm hover:shadow-sm transition"
 										style={{
-											background: "var(--bg)",
+											background: "var(--bg-secondary)",
 											borderColor: "var(--border)",
 											color: "var(--text)",
 										}}

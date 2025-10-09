@@ -8,12 +8,12 @@
 /* THEME COLORS */
 
 :root {
-	--bg: #f8fafc;
-	--bg-secondary: #e2e8f0;
+	--bg: #EDF2F7;
+	--bg-secondary: #f8f8f8;
 	--text: #18181b;
 	--text-secondary: #23272f;
 	--card: #fff;
-	--accent: #6366f1;
+	--accent: #68b4d4;
 	--accent2: #10b981;
 	--border: #d1d5db;
 	--header-bg: rgba(255, 255, 255, 0.6);
@@ -21,8 +21,6 @@
 	--badge-bg: #f3f4f6;
 	--badge-text: #18181b;
 	--desc-text: #23272f;
-	--hero-glow: radial-gradient(circle, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0) 78%);
-  	--hero-glow-blur: 48px;
 }
 
 html.dark {
@@ -31,7 +29,7 @@ html.dark {
 	--text: #fafaf9;
 	--text-secondary: #a1a1aa;
 	--card: #18181b;
-	--accent: #6366f1;
+	--accent: #759aac;
 	--accent2: #10b981;
 	--border: #23272f;
 	--header-bg: rgba(24, 24, 27, 0.6);
@@ -39,8 +37,6 @@ html.dark {
 	--badge-bg: #23272f;
 	--badge-text: #fafaf9;
 	--desc-text: #e5e7eb;
-	--hero-glow: radial-gradient(circle, rgba(255,255,255,0.28) 0%, rgba(0,0,0,0) 78%);
-  	--hero-glow-blur: 48px;
 }
 /* About section background gradient */
 .about-section-bg {
@@ -61,6 +57,7 @@ body {
 html, body {
   font-family: Montserrat;
 }
+
 
 /* smooth feel */
 html {
