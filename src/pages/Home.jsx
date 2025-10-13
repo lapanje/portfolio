@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import Hero1 from "../components/Hero1";
 import Section from "../components/Section";
 import ProjectCard from "../components/ProjectCard";
 import Footer from "../components/Footer";
@@ -65,7 +66,7 @@ export default function Home() {
 			style={{ background: "var(--bg)", color: "var(--text)" }}
 		>
 			<Header />
-			<Hero />
+			<Hero1 />
 			<div className="flex flex-col gap-4">
 				<Section
 					id="about"
