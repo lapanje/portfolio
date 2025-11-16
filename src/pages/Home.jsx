@@ -23,25 +23,25 @@ const projects = [
 	{
 		title: "Law Firm Management App",
 		tech: ["C#", "WPF", "EF Core", "SQLite", "PDF"],
-		desc: "Desktop app for a local law office to manage clients and cases.",
+		desc: "Desktop application for managing legal cases, clients and generating PDF case covers, built with a clean WPF interface.",
 		isPrivate: true,
 	},
 	{
-		title: "Student Management Web App",
-		tech: ["PHP", "MySQL", "HTML/CSS"],
-		desc: "Login, CRUD for student records, and basic filtering/sorting.",
-		repo: "https://github.com/youruser/student-management", // remove if unavailable
+		title: "Slikarnik (Image Processing App)",
+		tech: ["JavaScript", "HTML5 Canvas", "CSS"],
+		desc: "A simple browser-based image editor with filters, RGB analysis graph, channel manipulation and sharpening/blur effects.",
+		repo: "https://github.com/lapanje/Slikarnik",
 	},
 	{
 		title: "2D Platformer (SDL2)",
 		tech: ["C++", "SDL2"],
-		desc: "School project focused on game loop, rendering, and collision.",
+		desc: "Side-scrolling platformer built with a custom game loop, sprite rendering, collision system and basic enemy behavior.",
 		isPrivate: true,
 	},
 	{
 		title: "Family Business Website",
 		tech: ["WordPress", "HTML", "CSS", "SEO"],
-		desc: "Responsive site with custom layout and basic SEO for a local business.",
+		desc: "WordPress site with custom styling, optimized structure and SEO improvements for a local company.",
 		href: "https://www.lapanje.si",
 	},
 ];
@@ -50,7 +50,6 @@ const gridVariants = {
 	hidden: { opacity: 0 },
 	show: {
 		opacity: 1,
-		// smaller stagger so children show quicker
 		transition: { when: "beforeChildren", staggerChildren: 0.04 },
 	},
 };
@@ -83,7 +82,6 @@ export default function Home() {
 							}}
 						>
 							<div className="p-6 md:p-8 grid gap-8 md:grid-cols-5">
-								{/* LEFT: short, simple text (replace with your own) */}
 								<div className="md:col-span-3 space-y-4">
 									<h3
 										className="text-lg font-semibold"
