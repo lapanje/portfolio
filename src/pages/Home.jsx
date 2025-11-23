@@ -93,7 +93,7 @@ export default function Home() {
 										className="text-sm leading-relaxed text-justify"
 										style={{ color: "var(--desc-text)" }}
 									>
-										I'm 20 years old student from Slovenia.
+										I'm 21 years old student from Slovenia.
 										I study Computer Science and Informatics
 										Engineering at{" "}
 										<a
@@ -373,7 +373,7 @@ export default function Home() {
 							/>
 
 							<ExperienceItem
-								title="Remote Assistant — Društvo pljučnih bolnikov in alergikov"
+								title="Technical Assistance — Društvo pljučnih bolnikov in alergikov"
 								period="2024 (short term)"
 								bullets={[
 									"Completed Excel-based tasks.",
