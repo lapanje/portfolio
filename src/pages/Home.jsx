@@ -166,7 +166,6 @@ export default function Home() {
 														"HTML/CSS",
 														"PHP",
 														"JS",
-														"React",
 														"SQL",
 													].map((s) => (
 														<span
@@ -198,7 +197,7 @@ export default function Home() {
 												<div className="flex flex-wrap gap-2">
 													{[
 														"Git",
-														"Visual Studio",
+														"VS Code",
 														"EF Core",
 														"npm",
 													].map((s) => (
@@ -230,8 +229,8 @@ export default function Home() {
 												</div>
 												<div className="flex flex-wrap gap-2">
 													{[
-														"Component APIs",
-														"State Management",
+														"API Integration",
+														"Object Oriented Programming",
 														"Responsive Design",
 														"Performance",
 														"Accessibility",
