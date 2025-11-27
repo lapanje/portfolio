@@ -198,7 +198,7 @@ export default function Home() {
 													{[
 														"Git",
 														"VS Code",
-														"EF Core",
+														"MySQL",
 														"npm",
 													].map((s) => (
 														<span
