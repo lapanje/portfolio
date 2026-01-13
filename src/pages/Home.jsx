@@ -336,10 +336,10 @@ export default function Home() {
 								]}
 								tags={[
 									"C#",
-									"WinForms",
+									"WPF",
 									"EF Core",
 									"SQLite",
-									"PDF",
+									"PDF Gen",
 								]}
 							/>
 
@@ -364,10 +364,10 @@ export default function Home() {
 									</>,
 								]}
 								tags={[
-									"WordPress",
+									"Wordpress",
 									"HTML",
 									"CSS",
-									"SEO Basics",
+									"SEO",
 								]}
 							/>
 
@@ -382,14 +382,14 @@ export default function Home() {
 							/>
 
 							<ExperienceItem
-								title="Practical Training & Student Work — Metronik d.o.o., Ljubljana"
+								title="Internship & Student Work — Metronik d.o.o., Ljubljana"
 								period="05/2022 — 07/2022"
 								bullets={[
 									"Built a C# desktop app to monitor and visualize alarms via SQL queries.",
 									"Prepared filters, processed data, and delivered a clean, usable UI.",
 									"Worked with PLC/controller software to test and verify integrations.",
 								]}
-								tags={["C#", "WinForms/WPF", "SQL", "UI/UX"]}
+								tags={["C#", "WinForms", "SQL", "UI/UX"]}
 							/>
 						</ol>
 					</Reveal>
