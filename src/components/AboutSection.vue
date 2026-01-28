@@ -20,33 +20,33 @@ const props = defineProps({
 			</div>
 
 			<div class="about-layout">
-			<article class="about-card panel-card">
-				<div class="about-text">
-					<p v-for="line in props.about.description" :key="line">{{ line }}</p>
-				</div>
-			</article>
+				<article class="about-card panel-card">
+					<div class="about-text">
+						<p v-for="line in props.about.description" :key="line">{{ line }}</p>
+					</div>
+				</article>
 
-			<div class="about-columns">
-				<div class="skill-card glass">
-					<h3>Core Stack</h3>
-					<div class="pill-grid">
-						<span v-for="item in props.skills.coreStack" :key="item" class="pill">{{ item }}</span>
+				<div class="about-columns">
+					<div class="skill-card glass">
+						<h3>Core Stack</h3>
+						<div class="pill-grid">
+							<span v-for="item in props.skills.coreStack" :key="item" class="pill">{{ item }}</span>
+						</div>
 					</div>
-				</div>
-				<div class="skill-card panel-card">
-					<h3>Tools</h3>
-					<div class="pill-grid">
-						<span v-for="item in props.skills.tools" :key="item" class="pill">{{ item }}</span>
+					<div class="skill-card panel-card">
+						<h3>Tools</h3>
+						<div class="pill-grid">
+							<span v-for="item in props.skills.tools" :key="item" class="pill">{{ item }}</span>
+						</div>
 					</div>
-				</div>
-				<div class="skill-card panel-card">
-					<h3>Concepts</h3>
-					<div class="pill-grid">
-						<span v-for="item in props.skills.concepts" :key="item" class="pill">{{ item }}</span>
+					<div class="skill-card panel-card">
+						<h3>Concepts</h3>
+						<div class="pill-grid">
+							<span v-for="item in props.skills.concepts" :key="item" class="pill">{{ item }}</span>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 		</div>
 	</section>
 </template>

@@ -9,166 +9,156 @@ import ContactSection from "./components/ContactSection.vue";
 import SiteFooter from "./components/SiteFooter.vue";
 
 const about = {
-  description: [
-    "I'm a Computer Science student focused on building simple, maintainable software.",
-    "I work across web and desktop applications, with an emphasis on clarity, structure, and reliability.",
-    "Most of my experience comes from personal projects and real-world use cases, where practicality matters more than novelty."
-  ]
-}
+	description: [
+		"I'm a Computer Science student focused on building simple, maintainable software.",
+		"I work across web and desktop applications, with an emphasis on clarity, structure, and reliability.",
+		"Most of my experience comes from personal projects and real-world use cases, where practicality matters more than novelty.",
+	],
+};
 
 const skills = {
-  coreStack: ["C#", "C++", "HTML", "CSS", "JavaScript", "SQL"],
-  tools: ["Git", "VS Code", "MySQL", "NPM"],
-  concepts: [
-    "Object-Oriented Programming",
-    "API Integration",
-    "Responsive Design"
-  ]
-}
+	coreStack: ["C#", "C++", "HTML", "CSS", "JavaScript", "SQL"],
+	tools: ["Git", "VS Code", "MySQL", "NPM"],
+	concepts: ["Object-Oriented Programming", "API Integration", "Responsive Design"],
+};
 
 const projects = [
-  {
-    title: "Law Firm Management Application",
-    visibility: "Private",
-    description:
-      "Desktop application developed for internal use at a small law office to manage legal cases, clients, and documents. I designed the data model, implemented core CRUD functionality, and built PDF generation to replace manual workflows.",
-    tech: ["C#", "WPF", "EF Core", "SQLite", "PDF"],
-    links: []
-  },
-  {
-    title: "Slikarnik (Image Processing App)",
-    visibility: "Public",
-    description:
-      "Small browser-based image editor built to explore HTML canvas rendering and basic image manipulation, including filters and RGB analysis.",
-    tech: ["JavaScript", "HTML", "Canvas", "CSS"],
-    links: [
-      {
-        label: "Code",
-        url: "https://github.com/lapanje/slikarnik"
-      }
-    ]
-  },
-  {
-    title: "Family Business Website",
-    visibility: "Public",
-    description:
-      "Public-facing website built in Vue.js with a custom layout, responsive design, and basic SEO considerations for a small local business.",
-    tech: ["Vue.js", "HTML/CSS", "JavaScript", "SEO"],
-    links: [
-      {
-        label: "Live Website",
-        url: "https://www.lapanje.si"
-      }
-    ]
-  }
+	{
+		title: "Law Firm Management Application",
+		visibility: "Private",
+		description:
+			"Desktop application developed for internal use at a small law office to manage legal cases, clients, and documents. I designed the data model, implemented core CRUD functionality, and built PDF generation to replace manual workflows.",
+		tech: ["C#", "WPF", "EF Core", "SQLite", "PDF"],
+		links: [],
+	},
+	{
+		title: "Slikarnik (Image Processing App)",
+		visibility: "Public",
+		description:
+			"Small browser-based image editor built to explore HTML canvas rendering and basic image manipulation, including filters and RGB analysis.",
+		tech: ["JavaScript", "HTML", "Canvas", "CSS"],
+		links: [
+			{
+				label: "Code",
+				url: "https://github.com/lapanje/slikarnik",
+			},
+		],
+	},
+	{
+		title: "Family Business Website",
+		visibility: "Public",
+		description:
+			"Public-facing website built in Vue.js with a custom layout, responsive design, and basic SEO considerations for a small local business.",
+		tech: ["Vue.js", "HTML/CSS", "JavaScript", "SEO"],
+		links: [
+			{
+				label: "Live Website",
+				url: "https://www.lapanje.si",
+			},
+		],
+	},
 ];
 
-
-
 const education = [
-  {
-    degree: "Computer Science and Informatics Engineer",
-    institution: "School Center Kranj",
-    period: "2024 – Present",
-	eqf: "Level 6"
-  },
-  {
-    degree: "Computer Technician",
-    institution:
-      "Electrical Engineering and Computer Science Technical School and Gymnasium Ljubljana",
-    period: "2019 – 2024",
-	eqf: "Level 5"
-  }
-]
+	{
+		degree: "Computer Science and Informatics Engineer",
+		institution: "School Center Kranj",
+		period: "2024 – Present",
+		eqf: "Level 6",
+	},
+	{
+		degree: "Computer Technician",
+		institution: "Electrical Engineering and Computer Science Technical School and Gymnasium Ljubljana",
+		period: "2019 – 2024",
+		eqf: "Level 5",
+	},
+];
 
 const experience = [
-  {
-    company: "Odvetniška pisarna Žejn",
-    location: "Ljubljana, Slovenia",
+	{
+		company: "Odvetniška pisarna Žejn",
+		location: "Ljubljana, Slovenia",
 
-    role: "Software Developer",
-    period: {
-      from: "08/2025",
-      to: "10/2025"
-    },
+		role: "Software Developer",
+		period: {
+			from: "08/2025",
+			to: "10/2025",
+		},
 
-    type: "student project",
+		type: "student project",
 
-    highlights: [
-      "Independently developed an internal desktop application for viewing and managing legal case files.",
-      "Implemented features for client search, data import, and basic PDF document generation.",
-      "Completed as part of student project work."
-    ],
+		highlights: [
+			"Independently developed an internal desktop application for viewing and managing legal case files.",
+			"Implemented features for client search, data import, and basic PDF document generation.",
+			"Completed as part of student project work.",
+		],
 
-    tech: ["C#", "WinForms", "SQL", "PDF"]
-  },
+		tech: ["C#", "WinForms", "SQL", "PDF"],
+	},
 
-  {
-    company: "Društvo pljučnih in alergijskih bolnikov Slovenije",
-    location: "Ljubljana, Slovenia",
+	{
+		company: "Društvo pljučnih in alergijskih bolnikov Slovenije",
+		location: "Ljubljana, Slovenia",
 
-    role: "Technical Assistance",
-    period: {
-      from: "04/2025",
-      to: "04/2025"
-    },
+		role: "Technical Assistance",
+		period: {
+			from: "04/2025",
+			to: "04/2025",
+		},
 
-    type: "short-term",
+		type: "short-term",
 
-    highlights: [
-      "Performed technical tasks in Excel, including data processing and structured document preparation.",
-      "Used advanced Excel functions to organize and format datasets.",
-      "Short-term remote work."
-    ],
+		highlights: [
+			"Performed technical tasks in Excel, including data processing and structured document preparation.",
+			"Used advanced Excel functions to organize and format datasets.",
+			"Short-term remote work.",
+		],
 
-    tech: ["Excel"]
-  },
+		tech: ["Excel"],
+	},
 
-  {
-    company: "Metronik d.o.o.",
-    location: "Ljubljana, Slovenia",
+	{
+		company: "Metronik d.o.o.",
+		location: "Ljubljana, Slovenia",
 
-    role: "Internship & Student Work",
-    period: {
-      from: "05/2022",
-      to: "07/2022"
-    },
+		role: "Internship & Student Work",
+		period: {
+			from: "05/2022",
+			to: "07/2022",
+		},
 
-    type: "internship",
+		type: "internship",
 
-    highlights: [
-      "Developed a simple desktop application for monitoring and visualizing alarms using SQL queries.",
-      "Processed data, configured filters, and prepared a basic user interface.",
-      "Gained introductory experience with PLC systems and controller software."
-    ],
+		highlights: [
+			"Developed a simple desktop application for monitoring and visualizing alarms using SQL queries.",
+			"Processed data, configured filters, and prepared a basic user interface.",
+			"Gained introductory experience with PLC systems and controller software.",
+		],
 
-    tech: ["C#", "SQL", "PLC", "Desktop UI"]
-  }
-]
-
+		tech: ["C#", "SQL", "PLC", "Desktop UI"],
+	},
+];
 
 const contact = {
-  message:
-    "If you're interested in my work or want to discuss a project, feel free to reach out.",
-  links: [
-    { type: "email", label: "Email", value: "kristjan.lapanje@gmail.com" },
-    { type: "github", label: "GitHub", value: "@lapanje" },
-    { type: "instagram", label: "Instagram", value: "@kristjanlapanje" }
-  ]
-}
-
+	message: "If you're interested in my work or want to discuss a project, feel free to reach out.",
+	links: [
+		{ type: "email", label: "Email", value: "kristjan.lapanje@gmail.com" },
+		{ type: "github", label: "GitHub", value: "@lapanje" },
+		{ type: "instagram", label: "Instagram", value: "@kristjanlapanje" },
+	],
+};
 </script>
 
 <template>
 	<div class="page">
 		<div class="bg-grid"></div>
 		<Navbar />
-    <HeroSection />
-    <AboutSection :about="about" :skills="skills" />
-    <ProjectsSection :projects="projects" />
-    <EducationSection :education="education" />
-    <ExperienceSection :experience="experience" />
-    <ContactSection :contact="contact" />
+		<HeroSection />
+		<AboutSection :about="about" :skills="skills" />
+		<ProjectsSection :projects="projects" />
+		<EducationSection :education="education" />
+		<ExperienceSection :experience="experience" />
+		<ContactSection :contact="contact" />
 		<SiteFooter />
 	</div>
 </template>
@@ -216,8 +206,8 @@ a {
 .bg-grid {
 	position: fixed;
 	inset: 0;
-	background-image: linear-gradient(var(--line) 1px, transparent 1px),
-		linear-gradient(90deg, var(--line) 1px, transparent 1px);
+	background-image:
+		linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
 	background-size: 120px 120px;
 	opacity: 0.25;
 	pointer-events: none;
@@ -271,7 +261,11 @@ a {
 	font-weight: 600;
 	font-size: 14px;
 	text-decoration: none;
-	transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease, border-color 150ms ease;
+	transition:
+		transform 150ms ease,
+		box-shadow 150ms ease,
+		background 150ms ease,
+		border-color 150ms ease;
 	color: var(--text);
 }
 
@@ -322,7 +316,7 @@ a {
 	html {
 		scroll-behavior: auto;
 	}
-	
+
 	*,
 	*::before,
 	*::after {

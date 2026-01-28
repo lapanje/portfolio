@@ -33,12 +33,14 @@ const normalizedLinks = (links) => (Array.isArray(links) ? links.filter((link) =
 							>
 								{{ link.label }}
 							</a>
-							<span v-if="normalizedLinks(project.links).length === 0" class="project-private">Private</span>
+							<span v-if="normalizedLinks(project.links).length === 0" class="project-private"
+								>Private</span
+							>
 						</div>
 					</div>
-					
+
 					<p class="project-description">{{ project.description }}</p>
-					
+
 					<div class="project-tech">
 						<span v-for="tag in project.tech" :key="tag" class="tech-tag">{{ tag }}</span>
 					</div>
@@ -129,7 +131,9 @@ const normalizedLinks = (links) => (Array.isArray(links) ? links.filter((link) =
 	text-decoration: none;
 	font-size: 13px;
 	font-weight: 500;
-	transition: border-color 150ms ease, background 150ms ease;
+	transition:
+		border-color 150ms ease,
+		background 150ms ease;
 }
 
 .project-link:hover {

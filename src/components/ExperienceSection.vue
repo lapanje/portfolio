@@ -17,22 +17,26 @@ const props = defineProps({
 			</div>
 
 			<div class="experience-grid">
-				<article v-for="role in props.experience" :key="role.company + role.role" class="experience-card panel-card">
+				<article
+					v-for="role in props.experience"
+					:key="role.company + role.role"
+					class="experience-card panel-card"
+				>
 					<div class="experience-header">
 						<h3 class="experience-title">{{ role.role }}</h3>
 						<span class="experience-type">{{ role.type }}</span>
 					</div>
-					
+
 					<div class="experience-meta">
 						<p class="experience-company">{{ role.company }}</p>
 						<p class="experience-location">{{ role.location }}</p>
 						<p class="experience-period">{{ role.period.from }} — {{ role.period.to }}</p>
 					</div>
-					
+
 					<ul class="experience-highlights">
 						<li v-for="item in role.highlights" :key="item">{{ item }}</li>
 					</ul>
-					
+
 					<div class="experience-tech">
 						<span v-for="tag in role.tech" :key="tag" class="tech-tag">{{ tag }}</span>
 					</div>

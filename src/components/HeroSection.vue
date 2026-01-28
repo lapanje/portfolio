@@ -1,14 +1,11 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
 	<section class="section hero" id="hero">
 		<div class="hero-content">
 			<h1 class="hero-headline">Hi, I'm Kristjan</h1>
 			<p class="hero-meta">Based in Slovenia • Computer Science Student</p>
-			<p class="hero-sub">
-				I build clean web and desktop software.
-			</p>
+			<p class="hero-sub">I build clean web and desktop software.</p>
 			<div class="hero-actions">
 				<a class="cta" href="#projects">View Projects</a>
 				<a class="ghost" href="#contact">Get in Touch</a>
@@ -62,7 +59,7 @@
 		flex-direction: column;
 		align-items: center;
 	}
-	
+
 	.hero-actions a {
 		width: 100%;
 		max-width: 280px;
@@ -70,7 +67,7 @@
 }
 /* Add monospace meta style */
 .hero-meta {
-	font-family: 'JetBrains Mono', 'Fira Mono', 'Menlo', 'monospace';
+	font-family: "JetBrains Mono", "Fira Mono", "Menlo", "monospace";
 	color: var(--muted);
 	font-size: 15px;
 	margin: 0 0 18px;

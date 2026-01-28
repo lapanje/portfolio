@@ -17,18 +17,18 @@ const props = defineProps({
 			</div>
 
 			<div class="timeline">
-			<div v-for="item in props.education" :key="item.degree" class="timeline-item">
-				<div class="timeline-dot"></div>
-				<div class="timeline-card panel-card">
-					<div class="timeline-meta">
-						<span>{{ item.period }}</span>
-						<span>{{ item.eqf }}</span>
+				<div v-for="item in props.education" :key="item.degree" class="timeline-item">
+					<div class="timeline-dot"></div>
+					<div class="timeline-card panel-card">
+						<div class="timeline-meta">
+							<span>{{ item.period }}</span>
+							<span>{{ item.eqf }}</span>
+						</div>
+						<h3>{{ item.degree }}</h3>
+						<p>{{ item.institution }}</p>
 					</div>
-					<h3>{{ item.degree }}</h3>
-					<p>{{ item.institution }}</p>
 				</div>
 			</div>
-		</div>
 		</div>
 	</section>
 </template>

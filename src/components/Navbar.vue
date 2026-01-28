@@ -39,7 +39,9 @@ window.addEventListener("scroll", handleScroll, { passive: true });
 	right: 0;
 	z-index: 100;
 	padding: 12px 20px;
-	transition: background 150ms ease, box-shadow 150ms ease;
+	transition:
+		background 150ms ease,
+		box-shadow 150ms ease;
 }
 
 .nav-scrolled {
@@ -60,7 +62,9 @@ window.addEventListener("scroll", handleScroll, { passive: true });
 	border-radius: 16px;
 	background: rgba(255, 255, 255, 0.02);
 	border: 1px solid rgba(255, 255, 255, 0.06);
-	transition: background 150ms ease, border-color 150ms ease;
+	transition:
+		background 150ms ease,
+		border-color 150ms ease;
 }
 
 .nav-scrolled .nav-inner {
@@ -88,7 +92,7 @@ window.addEventListener("scroll", handleScroll, { passive: true });
 }
 
 .brand-text {
-	font-family: 'JetBrains Mono', 'Fira Mono', 'Menlo', 'monospace';
+	font-family: "JetBrains Mono", "Fira Mono", "Menlo", "monospace";
 	font-weight: 600;
 	font-size: 17px;
 	letter-spacing: 0.01em;
@@ -106,7 +110,9 @@ window.addEventListener("scroll", handleScroll, { passive: true });
 	padding: 8px 14px;
 	color: var(--muted);
 	border-radius: 10px;
-	transition: color 150ms ease, background 150ms ease;
+	transition:
+		color 150ms ease,
+		background 150ms ease;
 }
 
 .nav-link:hover {
@@ -126,7 +132,10 @@ window.addEventListener("scroll", handleScroll, { passive: true });
 	color: var(--muted);
 	font-size: 14px;
 	font-weight: 500;
-	transition: border-color 150ms ease, color 150ms ease, background 150ms ease;
+	transition:
+		border-color 150ms ease,
+		color 150ms ease,
+		background 150ms ease;
 	background: rgba(255, 255, 255, 0.02);
 }
 
@@ -143,7 +152,9 @@ window.addEventListener("scroll", handleScroll, { passive: true });
 	color: #04100a;
 	font-size: 14px;
 	font-weight: 600;
-	transition: transform 150ms ease, box-shadow 150ms ease;
+	transition:
+		transform 150ms ease,
+		box-shadow 150ms ease;
 	box-shadow: 0 4px 12px rgba(124, 247, 193, 0.25);
 }
 
@@ -161,7 +172,7 @@ window.addEventListener("scroll", handleScroll, { passive: true });
 	.cta-btn {
 		transition: none;
 	}
-	
+
 	.cta-btn:hover {
 		transform: none;
 	}

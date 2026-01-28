@@ -24,32 +24,39 @@ const resolveHref = (link) => {
 			</div>
 
 			<div class="contact-grid">
-			<div class="contact-card panel-card">
-				<h3>Quick Reach</h3>
-				<ul>
-					<li v-for="item in props.contact.links" :key="item.label">
-						<span>{{ item.label }}</span>
-						<a :href="resolveHref(item)" target="_blank">{{ item.value }}</a>
-					</li>
-				</ul>
-				<div class="contact-actions">
-					<a class="cta" :href="resolveHref({ type: 'email', value: 'kristjan.lapanje@gmail.com' })">Email me</a>
-					<a class="ghost" href="#projects">See work</a>
+				<div class="contact-card panel-card">
+					<h3>Quick Reach</h3>
+					<ul>
+						<li v-for="item in props.contact.links" :key="item.label">
+							<span>{{ item.label }}</span>
+							<a :href="resolveHref(item)" target="_blank">{{ item.value }}</a>
+						</li>
+					</ul>
+					<div class="contact-actions">
+						<a class="cta" :href="resolveHref({ type: 'email', value: 'kristjan.lapanje@gmail.com' })"
+							>Email me</a
+						>
+						<a class="ghost" href="#projects">See work</a>
+					</div>
 				</div>
-			</div>
 
-			<div class="social-card glass">
-				<div class="social-head">
-					<h3>Socials</h3>
-				</div>
-				<div class="social-grid">
-					<a v-for="item in props.contact.links.filter(l => l.type !== 'email')" :key="item.type" :href="resolveHref(item)" target="_blank">
-						<span class="social-label">{{ item.label }}</span>
-						<span class="social-handle">{{ item.value }}</span>
-					</a>
+				<div class="social-card glass">
+					<div class="social-head">
+						<h3>Socials</h3>
+					</div>
+					<div class="social-grid">
+						<a
+							v-for="item in props.contact.links.filter((l) => l.type !== 'email')"
+							:key="item.type"
+							:href="resolveHref(item)"
+							target="_blank"
+						>
+							<span class="social-label">{{ item.label }}</span>
+							<span class="social-handle">{{ item.value }}</span>
+						</a>
+					</div>
 				</div>
 			</div>
-		</div>
 		</div>
 	</section>
 </template>
@@ -133,7 +140,9 @@ const resolveHref = (link) => {
 	text-decoration: none;
 	color: var(--text);
 	background: rgba(255, 255, 255, 0.02);
-	transition: transform 150ms ease, border-color 150ms ease;
+	transition:
+		transform 150ms ease,
+		border-color 150ms ease;
 }
 
 .social-grid a:hover {
